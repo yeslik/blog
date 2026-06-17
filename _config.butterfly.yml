@@ -57,7 +57,7 @@ social:
 favicon: /img/icon.png
 
 avatar:
-  img: /img/头像.jpg
+  img: /img/avatar.jpg
   effect: true
 
 # Disable all banner images
@@ -67,7 +67,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: /img/博客封面.jpg
+index_img: /img/cover.jpg
 
 # The banner image of archive page
 archive_img: /img/横幅.jpg
@@ -81,7 +81,7 @@ tag_img: /img/tag.jpg
 tag_per_img:
 
 # Note: category page, not categories page
-category_img: /img/分类.jpg
+category_img: /img/category.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -546,7 +546,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Waline
+  use: 
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -555,7 +555,7 @@ comments:
   # Display comment count in post's top_img
   count: true
   # Display comment count in Home Page
-  card_post_count: true
+  card_post_count: false
 
 # Disqus
 # https://disqus.com/
@@ -756,7 +756,7 @@ ad:
 # Verification
 # --------------------------------------
 
-site_verification:
+site_verification: []
   # - name: google-site-verification
   #   content: xxxxxx
   # - name: baidu-site-verification
@@ -769,7 +769,7 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-  theme_color:
+theme_color:
   enable: true
   main: "#5BA4CF"
   paginator: "#5BA4CF"
@@ -996,7 +996,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
