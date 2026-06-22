@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo: /img/icon.jpg
+  logo: /img/my-icon.jpg
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
@@ -54,10 +54,10 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/icon.jpg
+favicon: /img/my-icon.jpg
 
 avatar:
-  img: /img/avatar.jpg
+  img: /img/my-avatar.jpg
   effect: true
 
 # Disable all banner images
@@ -67,13 +67,13 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: /img/cover.jpg
+index_img: /img/my-cover.jpg
 
 # The banner image of archive page
-archive_img: /img/banner.jpg
+archive_img: /img/my-banner.jpg
 
 # Note: tag page, not tags page
-tag_img: /img/tag.jpg
+tag_img: /img/my-tag.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -81,7 +81,7 @@ tag_img: /img/tag.jpg
 tag_per_img:
 
 # Note: category page, not categories page
-category_img: /img/category.jpg
+category_img: /img/my-category.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -103,18 +103,18 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover: 
-    - /img/post.jpg
+    - /img/my-post.jpg
 
 # Replace Broken Images
 error_img:
-  flink: /img/404.jpg
-  post_page: /img/404.jpg
+  flink: /img/my-404.jpg
+  post_page: /img/my-404.jpg
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: /img/404.jpg
+  background: /img/my-404.jpg
 
 post_meta:
   # Home Page
