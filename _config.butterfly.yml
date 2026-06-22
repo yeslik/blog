@@ -54,7 +54,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/icon.png
+favicon: /img/icon.jpg
 
 avatar:
   img: /img/avatar.jpg
@@ -70,7 +70,7 @@ default_top_img:
 index_img: /img/cover.jpg
 
 # The banner image of archive page
-archive_img: /img/横幅.jpg
+archive_img: /img/banner.jpg
 
 # Note: tag page, not tags page
 tag_img: /img/tag.jpg
@@ -103,18 +103,18 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover: 
-    - /img/文章.jpg
+    - /img/post.jpg
 
 # Replace Broken Images
 error_img:
-  flink: /img/friend_404.gif
+  flink: /img/404.jpg
   post_page: /img/404.jpg
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: /img/404.png
+  background: /img/404.jpg
 
 post_meta:
   # Home Page
