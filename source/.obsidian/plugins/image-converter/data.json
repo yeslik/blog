@@ -146,14 +146,9 @@
         "name": "Hexo Absolute Path",
         "linkFormat": "markdown",
         "pathFormat": "absolute"
-      },
-      {
-        "name": "2",
-        "linkFormat": "wikilink",
-        "pathFormat": "absolute"
       }
     ],
-    "selectedLinkFormatPreset": "2"
+    "selectedLinkFormatPreset": "Markdown, Relative"
   },
   "nonDestructiveResizeSettings": {
     "resizePresets": [
