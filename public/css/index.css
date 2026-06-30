@@ -1662,8 +1662,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #daeafa;
-  --hr-before-color: #cbe1f7;
+  --hr-border: #e7f2fb;
+  --hr-before-color: #deedf9;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-a-color: #4c4948;
@@ -1675,10 +1675,10 @@ canvas:not(#ribbon-canvas),
   --tab-button-hover-bg: #dcdcdc;
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
-  --card-meta: #888787;
+  --card-meta: #9ca3af;
   --sidebar-bg: #f6f8fa;
   --sidebar-menu-bg: #fff;
-  --btn-hover-color: #378add;
+  --btn-hover-color: #3d8bc0;
   --btn-color: #fff;
   --btn-bg: #5ba4cf;
   --text-bg-hover: rgba(91,164,207,0.7);
@@ -1687,12 +1687,12 @@ canvas:not(#ribbon-canvas),
   --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
-  --blockquote-bg: rgba(181,212,244,0.1);
+  --blockquote-bg: rgba(234,244,251,0.1);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #378add;
+  --pseudo-hover: #3d8bc0;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #5ba4cf;
   --default-bg-color: #5ba4cf;
@@ -1764,7 +1764,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: ZCOOL XiaoWei, sans-serif;
+  font-family: LXGW WenKai, sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -1893,7 +1893,7 @@ a:hover {
 .site-name,
 #aside-content .author-info-name,
 #aside-content .author-info-description {
-  font-family: ZCOOL XiaoWei;
+  font-family: LXGW WenKai;
 }
 .text-center {
   text-align: center;
@@ -2079,8 +2079,8 @@ figure.highlight pre .javascript .function {
 }
 .container code {
   padding: 2px 5px;
-  background: rgba(181,212,244,0.1);
-  color: #5ba4cf;
+  background: rgba(91,164,207,0.08);
+  color: #3d8bc0;
 }
 .container pre {
   padding: 10px 20px;
@@ -2454,7 +2454,7 @@ figure.highlight pre .javascript .function {
   height: 100%;
   vertical-align: top;
   text-align: center;
-  font-family: ZCOOL XiaoWei;
+  font-family: LXGW WenKai;
 }
 @media screen and (max-width: 768px) {
   .type-404 .error-content .error-info {
@@ -2884,6 +2884,19 @@ figure.highlight pre .javascript .function {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% / 2 - 8px);
+  vertical-align: top;
+}
+@media screen and (max-width: 768px) {
+  #recent-posts .recent-post-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #recent-posts .recent-post-item {
+    width: calc(100% / 3 - 8px);
+  }
 }
 #recent-posts .recent-post-item:hover .post-bg {
   -webkit-transform: scale(1.1);
@@ -2899,16 +2912,13 @@ figure.highlight pre .javascript .function {
 #recent-posts .recent-post-item .post_cover {
   overflow: hidden;
   width: 100%;
-  height: 17em;
+  height: 230px;
 }
-#recent-posts .recent-post-item .post_cover:before {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(18,18,18,0.4);
-  content: '';
-  backdrop-filter: blur(3px);
+@media screen and (max-width: 768px) {
+  #recent-posts .recent-post-item .post_cover {
+    width: 100%;
+    height: 230px;
+  }
 }
 #recent-posts .recent-post-item .post_cover .post-bg {
   z-index: -4;
@@ -2921,20 +2931,6 @@ figure.highlight pre .javascript .function {
     padding: 20px 20px 30px;
     width: 100%;
   }
-}
-#recent-posts .recent-post-item >.recent-post-info:not(.no-cover) {
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-  width: 100%;
-  color: var(--text-highlight-color);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  --text-highlight-color: #fff;
-  --card-meta: rgba(255,255,255,0.7);
 }
 #recent-posts .recent-post-item >.recent-post-info.no-cover {
   padding: 35px 30px;
@@ -5586,7 +5582,7 @@ figure.highlight pre .javascript .function {
   overflow-wrap: break-word;
 }
 .container a {
-  color: #5ba4cf;
+  color: #3d8bc0;
 }
 .container a:hover {
   text-decoration: underline;
@@ -6452,7 +6448,7 @@ figure.highlight pre .javascript .function {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #5ba4cf;
-  --waline-active-color: #378add;
+  --waline-active-color: #3d8bc0;
 }
 #waline-wrap .wl-comment-actions > button:not(last-child) {
   padding-right: 4px;
@@ -8112,7 +8108,7 @@ blockquote.pullquote.right {
   box-shadow: none;
 }
 [data-theme='dark'] .container .note code {
-  background: rgba(181,212,244,0.1);
+  background: rgba(91,164,207,0.08);
 }
 [data-theme='dark'] .container .aplayer {
   filter: brightness(0.8);

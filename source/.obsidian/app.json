@@ -1,0 +1,6 @@
+{
+  "attachmentFolderPath": "img/posts",
+  "useMarkdownLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_posts"
+}

@@ -175,7 +175,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 5
+index_layout: 6
 
 # Display the article introduction on homepage
 # 1: description
@@ -313,7 +313,7 @@ aside:
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
-    expand: none
+    expand: true
     sort_order:
   card_tags:
     enable: true
@@ -335,7 +335,7 @@ aside:
   card_archives:
     enable: true
     # Type: monthly / yearly
-    type: yearly
+    type: monthly
     # Eg: YYYY年MM月
     format: YYYY年MM月
     # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -772,16 +772,16 @@ theme_color:
   enable: true
   main: "#5BA4CF"
   paginator: "#5BA4CF"
-  button_hover: "#378ADD"
+  button_hover: "#3D8BC0" 
   text_selection: "#B5D4F4"
-  link_color: "#5BA4CF"
-  meta_color: "#888787"
-  hr_color: "#B5D4F4"
-  code_foreground: "#5BA4CF"
-  code_background: "rgba(181, 212, 244, .1)"
+  link_color: "#3D8BC0"
+  meta_color: "#9CA3AF"
+  hr_color: "#D0E5F7"
+  code_foreground: "#3D8BC0"
+  code_background: "rgba(91, 164, 207, .08)"
   toc_color: "#5BA4CF"
   blockquote_padding_color: "#5BA4CF"
-  blockquote_background_color: "#B5D4F4"
+  blockquote_background_color: "#EAF4FB"
   scrollbar_color: "#5BA4CF"
   meta_theme_color_light: "ffffff"
   meta_theme_color_dark: "#0d0d0d"
@@ -834,13 +834,13 @@ beautify:
 font:
   global_font_size: 16px
   code_font_size: 14px
-  font_family: 'ZCOOL XiaoWei, sans-serif'
+  font_family: 'LXGW WenKai, sans-serif' 
   code_font_family: 'JetBrains Mono, monospace'
 
 # Font settings for the site title and site subtitle
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap
-  font_family: 'ZCOOL XiaoWei'
+  font_link: https://fonts.googleapis.com/css2?family=LXGW+WenKai&display=swap
+  font_family: 'LXGW WenKai'
 # The setting of divider icon
 hr_icon:
   enable: true
@@ -892,13 +892,13 @@ canvas_nest:
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999
   mobile: false
 
 # Mouse click effects: Heart symbol
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words
