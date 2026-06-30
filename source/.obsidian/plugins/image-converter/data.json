@@ -228,7 +228,7 @@
         "resizeUnits": "pixels"
       }
     ],
-    "selectedResizePreset": "Height 800px"
+    "selectedResizePreset": "Default (No Resize)"
   },
   "resizeCursorLocation": "none",
   "dropPasteCursorLocation": "back",
