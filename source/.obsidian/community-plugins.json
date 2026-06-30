@@ -1,3 +1,7 @@
 [
-  "obsidian-git"
+  "obsidian-git",
+  "templater-obsidian",
+  "obsidian-paste-image-rename",
+  "obsidian-linter",
+  "image-converter"
 ]

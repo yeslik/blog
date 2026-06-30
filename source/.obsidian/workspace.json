@@ -15,7 +15,7 @@
               "state": {
                 "file": "_posts/test.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "test"
@@ -180,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,12 +192,23 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
   "active": "8e609a63eb3b8b54",
   "lastOpenFiles": [
+    "source/img/posts/test-1782810675503.webp",
+    "source/img/posts/test-1782810614284.webp",
+    "source/img/posts/test-1782810164898.webp",
+    "source/img/posts",
+    "source/img",
+    "source",
+    "_posts/测试templates功能.md",
+    "templates/hexo.md.md",
     "_posts/test.md",
+    "templates",
     "img/posts/Pasted image 20260630151702.png"
   ]
 }
