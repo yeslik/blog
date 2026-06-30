@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title>test</title>
     <url>/2026/06/30/test/</url>
     <content><![CDATA[
 ]]></content>
+  </entry>
+  <entry>
+    <title>测试templates功能</title>
+    <url>/2026/06/30/%E6%B5%8B%E8%AF%95templates%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
