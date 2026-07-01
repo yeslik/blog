@@ -15,7 +15,7 @@
     {
       "name": "Hexo Posts",
       "type": "CUSTOM",
-      "customTemplate": "source/img/posts"
+      "customTemplate": "img/posts"
     }
   ],
   "selectedFolderPreset": "Hexo Posts",
@@ -148,7 +148,7 @@
         "pathFormat": "absolute"
       }
     ],
-    "selectedLinkFormatPreset": "Markdown, Relative"
+    "selectedLinkFormatPreset": "Hexo Absolute Path"
   },
   "nonDestructiveResizeSettings": {
     "resizePresets": [
