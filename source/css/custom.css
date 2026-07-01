@@ -110,5 +110,5 @@ body {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center top !important;
-  background-color: #0d1117;
+  background: linear-gradient(135deg, #5BA4CF, #1E3A8A);
 }
