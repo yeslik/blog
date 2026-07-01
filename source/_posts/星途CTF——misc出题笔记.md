@@ -241,7 +241,7 @@ Megapixels                      : 0.120
 
 所有请求的路径都是一些标准路径，没有异常参数，排除；
 
-除去 ****GET 请求，POST请求的 body要么是OK，要么是hello world，排除；
+除去 GET 请求，POST请求的 body要么是OK，要么是hello world，排除；
 
 访问的都是微软、百度、Google 这类正常域名，排除；
 

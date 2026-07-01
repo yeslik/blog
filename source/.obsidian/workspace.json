@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/星途CTF——misc出题笔记.md",
+                "file": "_posts/第二届铸剑杯预选赛misc复现.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "星途CTF——misc出题笔记"
+              "title": "第二届铸剑杯预选赛misc复现"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -213,25 +213,29 @@
   },
   "active": "da1e9792d025c34e",
   "lastOpenFiles": [
-    "_posts/test.md",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898753719.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898748114.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898742220.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898733587.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898719425.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898701164.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898666054.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898660069.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898653449.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898645540.webp",
+    "img/posts/第二届铸剑杯预选赛misc复现-1782898636525.webp",
+    "_posts/2025CTF新生赛misc出题笔记.md",
+    "_posts/第二届铸剑杯预选赛misc复现.md",
+    "_posts/2026ctf新生赛出题笔记.md",
     "_posts/星途CTF——misc出题笔记.md",
+    "_posts/test.md",
     "_posts/测试templates功能.md",
     "about/index.md",
-    "img/posts/index-1782896729460.webp",
-    "img/my-background - 副本 (2).jpg",
-    "img/my-background - 副本.jpg",
     "templates/hexo.md.md",
-    "img/6da865762ce5d6fc5c9a2fa22a004195.jpg",
-    "img/303313e19fecccba52a4a475f2916681.jpg",
     "js/ripple.js",
     "js/新建 文本文档.txt",
     "js",
     "新建文件夹",
-    "img/my-cover.jpg",
-    "img/IMG_3667.jpg",
-    "img/posts/test-1782868987118.webp",
-    "img/posts/Pasted image 20260630151702.png",
-    "source/img/posts/test-1782868852235.webp",
     "source/img/posts",
     "source/img",
     "source",
