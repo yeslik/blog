@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "_posts/星途CTF——misc出题笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "星途CTF——misc出题笔记"
             }
           }
         ],
@@ -214,11 +214,12 @@
   "active": "da1e9792d025c34e",
   "lastOpenFiles": [
     "_posts/test.md",
+    "_posts/星途CTF——misc出题笔记.md",
+    "_posts/测试templates功能.md",
     "about/index.md",
     "img/posts/index-1782896729460.webp",
     "img/my-background - 副本 (2).jpg",
     "img/my-background - 副本.jpg",
-    "_posts/测试templates功能.md",
     "templates/hexo.md.md",
     "img/6da865762ce5d6fc5c9a2fa22a004195.jpg",
     "img/303313e19fecccba52a4a475f2916681.jpg",
