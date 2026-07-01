@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/test.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "index"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -213,10 +214,12 @@
   },
   "active": "da1e9792d025c34e",
   "lastOpenFiles": [
+    "img/posts/index-1782896729460.webp",
+    "about/index.md",
+    "_posts/test.md",
     "img/my-background - 副本 (2).jpg",
     "img/my-background - 副本.jpg",
     "_posts/测试templates功能.md",
-    "_posts/test.md",
     "templates/hexo.md.md",
     "img/6da865762ce5d6fc5c9a2fa22a004195.jpg",
     "img/303313e19fecccba52a4a475f2916681.jpg",
@@ -232,8 +235,6 @@
     "source/img/posts",
     "source/img",
     "source",
-    "source/img/posts/test-1782812470316.webp",
-    "source/img/posts/test-1782811087262.webp",
     "_posts/2026-06-30.md",
     "_posts/Open another vault.md",
     "css/custom.css",
