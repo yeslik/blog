@@ -170,17 +170,74 @@ body {
     background: transparent !important;
 }
 
-/* 分类卡片 */
-.category-list-item {
-    background: rgba(255,255,255,0.85);
-    border-radius: 12px;
-    padding: 16px;
+.page-categories .category-list-item {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 14px 18px;
     margin-bottom: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-left: 4px solid #7bbcff;
+    box-shadow: 0 6px 18px rgba(123,188,255,0.15);
+    transition: all 0.25s ease;
+}
+
+/* hover */
+.page-categories .category-list-item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 10px 25px rgba(123,188,255,0.25);
+    background: rgba(235,245,255,0.9);
+}
+
+.page-tags .tag-cloud a {
+    display: inline-block;
+    padding: 6px 14px;
+    margin: 6px;
+    border-radius: 999px;
+    background: rgba(235,245,255,0.9);
+    color: #4a90e2;
+    font-size: 13px;
+    border: 1px solid rgba(123,188,255,0.2);
+    box-shadow: 0 4px 12px rgba(123,188,255,0.12);
+}
+
+/* hover */
+.page-tags .tag-cloud a:hover {
+    background: #7bbcff;
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(123,188,255,0.25);
+}
+
+/* about 主卡片 */
+.page-about .card-info {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(123,188,255,0.18);
+    border: 1px solid rgba(123,188,255,0.15);
+    padding: 20px;
+}
+
+/* 头像 */
+.page-about .avatar-img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(123,188,255,0.3);
     transition: all 0.3s ease;
 }
 
-.category-list-item:hover {
+.page-about .avatar-img:hover {
+    transform: rotate(3deg) scale(1.05);
+}
+
+/* 按钮 */
+.page-about .button--primary {
+    background: linear-gradient(90deg, #7bbcff, #a6d4ff);
+    border-radius: 999px;
+    border: none;
+}
+
+.page-about .button--primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(123,188,255,0.3);
 }
