@@ -211,8 +211,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "da1e9792d025c34e",
+  "active": "ba994ac4ec8bd20f",
   "lastOpenFiles": [
+    "img/6da865762ce5d6fc5c9a2fa22a004195.jpg",
+    "img/303313e19fecccba52a4a475f2916681.jpg",
+    "js/ripple.js",
+    "js/新建 文本文档.txt",
+    "js",
+    "新建文件夹",
     "img/my-cover.jpg",
     "img/IMG_3667.jpg",
     "img/posts/test-1782868987118.webp",
@@ -226,16 +232,12 @@
     "source/img/posts/test-1782811087262.webp",
     "source/img/posts/test-1782810937780.webp",
     "source/img/posts/test-1782810752285.webp",
-    "source/img/posts/test-1782810675503.webp",
-    "source/img/posts/test-1782810614284.webp",
     "_posts/2026-06-30.md",
     "_posts/Open another vault.md",
     "css/custom.css",
     "css/新建 文本文档.txt",
     "css",
-    "新建文件夹",
     "_posts/测试templates功能.md",
-    "templates/hexo.md.md",
-    "templates"
+    "templates/hexo.md.md"
   ]
 }

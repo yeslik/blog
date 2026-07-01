@@ -898,7 +898,7 @@ fireworks:
 
 # Mouse click effects: Heart symbol
 click_heart:
-  enable: true
+  enable: false
   mobile: false
 
 # Mouse click effects: words
@@ -1070,7 +1070,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">  # 注入自定义 CSS
   bottom:
-  #  - <script src="/js/custom.js"></script>            # 注入自定义 JS
+    - <script src="/js/ripple.js"></script>            # 注入自定义 JS
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
