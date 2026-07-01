@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -214,9 +213,9 @@
   },
   "active": "da1e9792d025c34e",
   "lastOpenFiles": [
-    "img/posts/index-1782896729460.webp",
-    "about/index.md",
     "_posts/test.md",
+    "about/index.md",
+    "img/posts/index-1782896729460.webp",
     "img/my-background - 副本 (2).jpg",
     "img/my-background - 副本.jpg",
     "_posts/测试templates功能.md",

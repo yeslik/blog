@@ -7,7 +7,7 @@ type: about
 
 <div class="about-card">
 
-<img src="/img/avatar.jpg" class="about-avatar">
+<img src="/img/my-avatar.jpg" class="about-avatar">
 
 ### 🌊 关于我
 
