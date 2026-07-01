@@ -105,3 +105,10 @@ body {
     background: rgba(255, 255, 255, 0.85);
   }
 }
+
+#page-header {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-color: #0d1117;
+}
