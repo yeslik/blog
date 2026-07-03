@@ -35,7 +35,8 @@
               "title": "概率论复习"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,20 +211,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "da1e9792d025c34e",
+  "active": "222e0035f57c86dd",
   "lastOpenFiles": [
-    "_posts/概率论复习.md",
-    "img/posts/概率论复习-1783049632811.webp",
-    "img/posts/概率论复习-1783049577517.webp",
-    "img/posts/概率论复习-1783049527226.webp",
-    "img/posts/概率论复习-1783049433822.webp",
-    "img/posts/概率论复习-1783049406684.webp",
-    "img/posts/概率论复习-1783049368717.webp",
+    "img/posts/概率论复习-1783057447863.webp",
+    "img/posts/概率论复习-1783057249324.webp",
+    "img/posts/概率论复习-1783057219450.webp",
+    "img/posts/概率论复习-1783057205735.webp",
+    "img/posts/概率论复习-1783057164867.webp",
+    "img/posts/概率论复习-1783057120994.webp",
+    "img/posts/概率论复习-1783056976571.webp",
+    "img/posts/概率论复习-1783056873333.webp",
+    "img/posts/概率论复习-1783049856929.webp",
+    "img/posts/概率论复习-1783049817285.webp",
+    "img/posts/概率论复习-1783049804973.webp",
     "_posts/歌儿小录~.md",
-    "img/posts/概率论复习-1783049318541.webp",
-    "img/posts/概率论复习-1783049253178.webp",
-    "img/posts/概率论复习-1783049223038.webp",
-    "img/posts/概率论复习-1783049197637.webp",
+    "_posts/概率论复习.md",
     "_posts/test.md",
     "about/index.md",
     "_posts/solar应急响应-2025.11月.md",
