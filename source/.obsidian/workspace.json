@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "歌儿小录~"
             }
+          },
+          {
+            "id": "222e0035f57c86dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/概率论复习.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "概率论复习"
+            }
           }
         ]
       }
@@ -199,17 +213,17 @@
   "active": "da1e9792d025c34e",
   "lastOpenFiles": [
     "_posts/概率论复习.md",
-    "img/posts/概率论复习-1783048453144.webp",
-    "img/posts/概率论复习-1783048385466.webp",
-    "img/posts/概率论复习-1783048285855.webp",
-    "img/posts/概率论复习-1783048231886.webp",
-    "img/posts/概率论复习-1783048071361.webp",
-    "img/posts/概率论复习-1783048025365.webp",
-    "img/posts/概率论复习-1783047914665.webp",
-    "img/posts/概率论复习-1783047835085.webp",
-    "img/posts/概率论复习-1783047720002.webp",
-    "img/posts/概率论复习-1783047705983.webp",
+    "img/posts/概率论复习-1783049632811.webp",
+    "img/posts/概率论复习-1783049577517.webp",
+    "img/posts/概率论复习-1783049527226.webp",
+    "img/posts/概率论复习-1783049433822.webp",
+    "img/posts/概率论复习-1783049406684.webp",
+    "img/posts/概率论复习-1783049368717.webp",
     "_posts/歌儿小录~.md",
+    "img/posts/概率论复习-1783049318541.webp",
+    "img/posts/概率论复习-1783049253178.webp",
+    "img/posts/概率论复习-1783049223038.webp",
+    "img/posts/概率论复习-1783049197637.webp",
     "_posts/test.md",
     "about/index.md",
     "_posts/solar应急响应-2025.11月.md",
