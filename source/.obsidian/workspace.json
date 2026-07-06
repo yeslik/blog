@@ -50,19 +50,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ba994ac4ec8bd20f",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "文件列表"
-            }
-          },
-          {
             "id": "2563e2258bf51743",
             "type": "leaf",
             "state": {
@@ -93,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -213,19 +201,19 @@
   },
   "active": "222e0035f57c86dd",
   "lastOpenFiles": [
-    "img/posts/移动互联网安全复习-1783312230154.webp",
-    "img/posts/移动互联网安全复习-1783312204646.webp",
-    "_posts/概率论复习.md",
+    "img/posts/移动互联网安全复习-1783316507611.webp",
+    "img/posts/移动互联网安全复习-1783316494040.webp",
+    "img/posts/移动互联网安全复习-1783316450907.webp",
+    "img/posts/移动互联网安全复习-1783316443379.webp",
+    "img/posts/移动互联网安全复习-1783314328802.webp",
+    "img/posts/移动互联网安全复习-1783313947342.webp",
+    "img/posts/移动互联网安全复习-1783313928070.webp",
+    "img/posts/移动互联网安全复习-1783313878329.webp",
+    "img/posts/移动互联网安全复习-1783313857119.webp",
     "_posts/移动互联网安全复习.md",
-    "img/posts/概率论复习-1783060312525.webp",
-    "img/posts/概率论复习-1783060294592.webp",
-    "img/posts/概率论复习-1783060284829.webp",
-    "img/posts/概率论复习-1783060271235.webp",
-    "img/posts/概率论复习-1783060249680.webp",
-    "img/posts/概率论复习-1783060249581.webp",
-    "img/posts/概率论复习-1783060237554.webp",
-    "img/posts/概率论复习-1783060206439.webp",
-    "img/posts/概率论复习-1783060183553.webp",
+    "img/posts/移动互联网安全复习-1783313527117.webp",
+    "img/posts/移动互联网安全复习-1783313460109.webp",
+    "_posts/概率论复习.md",
     "_posts/歌儿小录~.md",
     "_posts/test.md",
     "about/index.md",
