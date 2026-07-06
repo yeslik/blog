@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/计网复习.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "计网复习"
+              "title": "index"
             }
           }
         ],
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "about",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -201,6 +200,7 @@
   },
   "active": "3c9c7f21da24a05b",
   "lastOpenFiles": [
+    "_posts/计网复习.md",
     "img/posts/计网复习-1783329729708.webp",
     "img/posts/计网复习-1783329692727.webp",
     "img/posts/计网复习-1783329362659.webp",
@@ -211,9 +211,7 @@
     "img/posts/计网复习-1783322486628.webp",
     "img/posts/计网复习-1783321934830.webp",
     "img/posts/计网复习-1783319840083.webp",
-    "img/posts/计网复习-1783319590868.webp",
     "_posts/歌儿小录~.md",
-    "_posts/计网复习.md",
     "_posts/移动互联网安全复习.md",
     "_posts/概率论复习.md",
     "_posts/test.md",

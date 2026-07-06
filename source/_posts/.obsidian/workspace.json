@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
+                "file": "计网复习.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "计网复习"
             }
           }
         ]
@@ -185,8 +185,11 @@
   },
   "active": "c82b156d2e838419",
   "lastOpenFiles": [
+    "概率论复习.md",
+    "测试templates功能.md",
+    "2025CTF新生赛misc出题笔记.md",
+    "test.md",
     "Pasted image 20260630150732.png",
-    "图片来.md",
-    "test.md"
+    "图片来.md"
   ]
 }
