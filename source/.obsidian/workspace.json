@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "_posts/计网复习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "计网复习"
             }
           }
         ],
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "about",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,12 +75,27 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "8d2233c886dc49af",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -200,6 +215,7 @@
   },
   "active": "3c9c7f21da24a05b",
   "lastOpenFiles": [
+    "about/index.md",
     "_posts/计网复习.md",
     "img/posts/计网复习-1783329729708.webp",
     "img/posts/计网复习-1783329692727.webp",
@@ -215,7 +231,6 @@
     "_posts/移动互联网安全复习.md",
     "_posts/概率论复习.md",
     "_posts/test.md",
-    "about/index.md",
     "_posts/solar应急响应-2025.11月.md",
     "_posts/solar1应急响应-2025.10月.md",
     "_posts/solar应急响应-2025.7月.md",
