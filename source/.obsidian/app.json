@@ -2,5 +2,12 @@
   "attachmentFolderPath": "img/posts",
   "useMarkdownLinks": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "_posts"
+  "newFileFolderPath": "_posts",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
