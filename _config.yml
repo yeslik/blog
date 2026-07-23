@@ -107,3 +107,9 @@ search:
   path: search.xml
   field: post
   content: true
+
+plugins:
+
+# hexo-blog-encrypt
+encrypt:
+  enable: true

