@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/歌儿小录~.md",
+                "file": "_posts/Day.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "歌儿小录~"
+              "title": "Day"
             }
           }
         ],
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d5e7ab15bfb04ee1",
@@ -214,21 +215,22 @@
   },
   "active": "3c9c7f21da24a05b",
   "lastOpenFiles": [
+    "img/posts/Day-1784786987664.webp",
+    "img/posts/Day-1784786974350.webp",
+    "img/posts/Day-1784786946525.webp",
+    "img/posts/Day-1784786938392.webp",
+    "img/posts/Day-1784786095242.webp",
+    "img/posts/Day-1784786054951.webp",
+    "img/posts/Day-1784786012222.webp",
+    "img/posts/Day-1784785763582.webp",
+    "img/posts/Day-1784785746729.webp",
+    "_posts/歌儿小录~.md",
     "_posts/Day.md",
     "img/posts/Day-1784784715377.webp",
     "_posts/AI Security.md",
-    "_posts/歌儿小录~.md",
     "未命名",
     "_posts/计网复习.md",
     "img/posts/计网复习-1783504825492.webp",
-    "img/posts/计网复习-1783504808233.webp",
-    "img/posts/计网复习-1783504753045.webp",
-    "img/posts/计网复习-1783504731823.webp",
-    "img/posts/计网复习-1783504707322.webp",
-    "img/posts/计网复习-1783504666773.webp",
-    "img/posts/计网复习-1783504608362.webp",
-    "img/posts/计网复习-1783504565885.webp",
-    "img/posts/计网复习-1783504500772.webp",
     "about/index.md",
     "_posts/移动互联网安全复习.md",
     "_posts/概率论复习.md",
