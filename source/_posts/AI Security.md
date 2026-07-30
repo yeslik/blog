@@ -5,6 +5,7 @@ tags:
   - AI
 categories:
   - AI
+password: "@95Day90!!"
 ---
 # 常见的攻击
 1. Prompt Injection
